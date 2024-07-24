@@ -1,6 +1,6 @@
 
 "use client"
-// import VideoThumb from '@/public/images/hero-image.png'
+
 import ModalVideo from '@/components/modal-video'
 import ReadMoreReact from 'read-more-react';
 import Carousel from '../components/CarouselSlider/Carousel'

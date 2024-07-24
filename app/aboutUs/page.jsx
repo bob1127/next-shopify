@@ -14,8 +14,7 @@ import Marquee from 'react-fast-marquee'
 import Image from 'next/image'
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
 
-// import Img01 from '../../public/images/wix.jpg'
-// import Img02 from '../../public/images/up100-banner01.png'
+
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
@@ -28,7 +27,7 @@ import React from "react";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import { properties } from "../../constants/data";
 import TabWrap from '../../components/Tabs/Tabs'
-import scan from '../../public/images/scan.png'
+
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import Link from 'next/link'
 import CardPage from '../../components/CardParallax/CardPage'

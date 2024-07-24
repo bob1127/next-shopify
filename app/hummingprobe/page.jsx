@@ -3,9 +3,7 @@
 import Tooltip from "../../components/Tooltip"
 import JsonLd from '../../components/JsonLd.jsx';
 import ReadMoreReact from 'read-more-react';
-import Image from 'next/image'
-import Img01 from '../../public/images/wix.jpg'
-import Img02 from '../../public/images/c2.jpg'
+
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
@@ -36,7 +34,7 @@ import { Button } from "@nextui-org/react";
 // import TabComponent from "../components/Tabs/TabComponent";
 // import tabs from "../components/Tabs/tabs";
 import '../../styles/additional-styles/tab.css'
-// import '../../public/images/demo.png'
+
 const myLoader = ({ src, width, quality, placeholder }) => {
     return `https://www.ultraehp.com/images/index/carousel-img/1920x768/${src}?w=${width}?p=${placeholder}`
 }

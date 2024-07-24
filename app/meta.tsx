@@ -31,10 +31,9 @@
 import Tooltip from "../components/Tooltip"
 import { CldImage } from 'next-cloudinary';
 import Image from 'next/image'
-import Img01 from '../../public/images/wix.jpg'
-import Img02 from '../../public/images/c2.jpg'
-import UP100 from '../public/images/UP100.png'
-import UP10001 from '../public/images/carousel01.jpg'
+
+
+
 
 import Hero from '@/components/hero'
 import Link from "next/link";
@@ -155,7 +154,7 @@ export default async function Home() {
                     </div>
                 </div>
 
-                {/* <img src='../../../../public/images/wix.jpg' alt="" className='w-full' /> */}
+              
 
                 {/* <div className="relative flex justify-center mb-8 border" data-aos="zoom-y-out" data-aos-delay="450">
 

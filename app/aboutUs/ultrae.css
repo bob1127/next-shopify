@@ -1,0 +1,15 @@
+.Bg-img {
+  background-image: url("https://www.ultraehp.com/images/UP100/banner05.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.btn-wrap a {
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: white;
+  padding: 4px 5px;
+  width: 180px;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=ultrae.css.map */

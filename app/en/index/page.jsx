@@ -5,9 +5,7 @@ export const metadata = {
 
 import Tooltip from "../../../components/Tooltip"
 
-import Image from 'next/image'
-import Img01 from '../../../public/images/wix.jpg'
-import Img02 from '../../../public/images/c2.jpg'
+
 import Hero from '@/components/hero'
 import Features from '@/components/features'
 import FeaturesBlocks from '@/components/features-blocks'
@@ -51,7 +49,7 @@ export default async function Home() {
                     </div>
                 </div>
 
-                <img src='../../../../public/images/wix.jpg' alt="" className='w-full' />
+              
 
                 <div className="relative flex justify-center mb-8 border" data-aos="zoom-y-out" data-aos-delay="450">
 
