@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,2EAA2E;EAC7F,mBAAmB,EAAE,aAAa;EAClC,iBAAiB,EAAE,SAAS;EAC5B,KAAK,EAAE,IAAI;CACd;;AAKD,AAAA,SAAS,CAAC,CAAC,CAAC;EACR,MAAM,EAAE,iBAAiB;EACzB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,OAAO;EAChB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,MAAM;CAEjB",
-    "sources": [
-        "ultrae.scss"
-    ],
-    "names": [],
-    "file": "ultrae.css"
-}
