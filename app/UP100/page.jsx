@@ -34,7 +34,7 @@ import Double from '../../components/two-colum/Double.jsx';
 import ModalBrn from "../../components/ModalBtn.jsx"
 import { Cloudinary } from "@cloudinary/url-gen";
 import { title } from "process";
-import UP10001 from '../../public/images/zensor__jogging__black_background_style--v_6.0_728c5804-1334-4d8f-b6de-fabeefed4b4f.png'
+import UP10001 from '../../public/images/  '
 
 import { CldVideoPlayer } from "next-cloudinary";
   

@@ -9,7 +9,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import React from "react";
-import img01 from "../../public/images/brazil.webp";
+
 import { Cloudinary } from "@cloudinary/url-gen";
 const cld = new Cloudinary({
     cloud: {

@@ -11,7 +11,7 @@ import Image from 'next/image'
 import { motion } from "framer-motion";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 import React from "react";
-import img01 from "../../public/images/brazil.webp";
+
 import { Cloudinary } from "@cloudinary/url-gen";
 
 const myLoader001 = ({ src, width, quality, placeholder }) => {

@@ -48,7 +48,7 @@ import ModalBrn from "../../components/ModalBtn.jsx"
 import ModalBtn from "../../components/ModalBtn-1.jsx"
 // import { Cloudinary } from "@cloudinary/url-gen";
 import { title } from "process";
-import UP10001 from '../../public/images/zensor__jogging__black_background_style--v_6.0_728c5804-1334-4d8f-b6de-fabeefed4b4f.png'
+import UP10001 from '../../public/images/  '
 // import ModalBtn from "../../components/ModalBtn-1.jsx"
 import ModalBtn01 from "../../components/ModalBtn-3.jsx"
 import ModalBtn05 from "../../components/ModalBtn-5.jsx"

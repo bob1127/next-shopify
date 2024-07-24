@@ -29,11 +29,11 @@ export const countries = [
     },
    
     // {
-    //     image: "./images/brazil.webp",
+ 
     //     title: "Japan",
     // },
     // {
-    //     image: "./images/brazil.webp",
+ 
     //     title: "Norway",
     // },
 ];

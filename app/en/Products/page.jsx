@@ -7,8 +7,6 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure
 import React from "react";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 
-import img01 from "../../../public/images/brazil.webp";
-
 
 
 
