@@ -27,7 +27,7 @@ import CarouselThumbs from "../../components/CarouselThumbs.js";
 import SwiperSlider from '../../components/SwiperSliders/UX100Slider-en.jsx'
 import { AdvancedVideo, lazyload, accessibility, responsive, placeholder } from "@cloudinary/react";
 import { CldImage } from 'next-cloudinary';
-import HeroImg from '../../public/images/7.jpg'
+
 import Carousel from "../../components/Products/ProductCarouselUX200.jsx";
 
 import JsonLd from '../../components/JsonLd.jsx';

@@ -59,7 +59,7 @@ import ModalBtn02 from "../../components/ModalBtn-2.jsx"
 import WhenUse from '../../components/WhenUse.jsx'
 // import { Cloudinary } from "@cloudinary/url-gen";
 import { title } from "process";
-import UP10001 from '../../public/images/  '
+
 // import IMG01 from 'https://www.ultraehp.com/images/Products-Detail-Img/UH-1/UH1-07-%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6720x540.webp'
 import { CldVideoPlayer } from "next-cloudinary";
   

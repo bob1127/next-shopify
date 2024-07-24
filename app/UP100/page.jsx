@@ -34,7 +34,7 @@ import Double from '../../components/two-colum/Double.jsx';
 import ModalBrn from "../../components/ModalBtn.jsx"
 import { Cloudinary } from "@cloudinary/url-gen";
 import { title } from "process";
-import UP10001 from '../../public/images/  '
+
 
 import { CldVideoPlayer } from "next-cloudinary";
   
