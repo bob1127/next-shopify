@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide, Navigation, Thumbs } from "./Slider";
+// import { Swiper, SwiperSlide, Navigation, Thumbs } from "./Slider";
 
 export default function ProductImage({ gallery, thumbsSwiper }) {
   return (

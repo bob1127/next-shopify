@@ -104,7 +104,7 @@ export default async function Home() {
 
                     {/* <video className="w-full" src="https://www.ultraehp.com/video/hero-video%20-%20HD%201080p.mov" >
           </video> */}
-                    <Image
+                    {/* <Image
                         className="absolute top-[0px] left-[0px]"
                         src={UP10001}
                         width={1920}
@@ -112,7 +112,7 @@ export default async function Home() {
 
 
                         alt="Picture of the author"
-                    />
+                    /> */}
                     <div className="HeroTitle top-[18%] md:top-[22%] lg:top-[31%] w-[45%] left-[6%] absolute  border  z-50">
                         <span className="text-sm text-white ">Watch this space.
 

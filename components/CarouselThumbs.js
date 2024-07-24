@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "./Slider";
+// import { Swiper, SwiperSlide } from "./Slider";
 
 const galleryCarouselBreakpoints = {
   320: {
