@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { Suspense } from 'react'
 import Link from "next/link";
 import Example from '../../components/Drag/Example.jsx'
-import Styles from "./style.css";
+import Marquee from 'react-fast-marquee'
+import Styles from "./toys.scss";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 import { Typewriter } from 'react-simple-typewriter'
 import ShiftTime from "../../components/ShiftingCountdown/index.jsx"
@@ -12,9 +13,13 @@ import ShiftTime from "../../components/ShiftingCountdown/index.jsx"
 import SmoothParallaxScroll from '../../components/SmoothParallaxScroll/index.js'
 import { Parallax } from 'react-parallax';
 import SwiperCarousel from '../../components/SwiperCarousel/SwiperCardAbout.jsx'
+import SwiperCarousel01 from '../../components/SwiperCarousel/SwiperCard.jsx'
+import SwiperCarousel02 from '../../components/SwiperCarousel/SwiperCardFood.jsx'
 import DragCarousel from '../../components/DragCarousel/index.tsx'
 import JsonLd from '../../components/JsonLd.jsx';
 import YoutubeUH1 from '../../components/VideoPlayer/UH1.jsx'
+import TabMenu from '../../components/SVGtext.jsx'; // Adjust the path based on your project structure
+
 // import { CldImage } from 'next-cloudinary';
 import Image from 'next/image'
 // import { AdvancedVideo, lazyload, accessibility, responsive, placeholder } from "@cloudinary/react";
@@ -24,7 +29,7 @@ import Cards from '../../components/Cards/Cards.js'
 import { DefaultSeo } from 'next-seo';
 import ReadMoreReact from 'read-more-react';
 import TextScroll from '../../components/textScroll/TextScroll01.jsx';
-import { Card, CardHeader, CardBody, Tooltip } from "@nextui-org/react";
+// import {  CardHeader, CardBody, Tooltip } from "@nextui-org/react";
 // import AnimatedTabs from '../../components/TabLink/index.jsx'
 import CelebrateBTN from '../../components/CelebrateBtn/index.jsx';
 // import 'cloudinary-video-player/cld-video-player.min.css';
@@ -32,12 +37,13 @@ import { card, CardFooter } from '@nextui-org/react';
 // import MobileMenu from '../../components/mobileMenu/index.jsx'
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure } from "@nextui-org/react";
 import OthersProducts from '../../components/ReactSlick/ImageSlider2.jsx'
-import Marquee from 'react-fast-marquee';
+
 import SwiperSlider from '../../components/SwiperSliders/UH1Slider.jsx'
 import FindSPE from '../../components/FindSPE.jsx'
 import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
+import {Tabs, Tab, Card, CardBody, CardHeader} from "@nextui-org/react";
 
-import { Tabs, Tab } from "@nextui-org/react";
+// import { Tabs, Tab } from "@nextui-org/react";
 
 import { useState } from "react";
 // import Head from "next/head";
@@ -319,6 +325,23 @@ const slideNumberStyle = {
 };
 
 
+  let tabs = [
+    {
+      id: "photos",
+      label: "Photos",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      id: "music",
+      label: "Music",
+      content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+      id: "videos",
+      label: "Videos",
+      content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  ];
 
 
 
@@ -455,7 +478,9 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 
         </div>
  <Parallax className="mt-[100px] pb-[100px]" bgImage={backgroundImage} strength={500}>
-    <section className="section_Timer bg-cover bg-center mt-[30px] py-[20px]">
+    <section className="section_Timer 
+
+ bg-cover bg-center mt-[30px] py-[20px]">
       <div className="flex flex-col justify-center items-center">
         <div className="txt">
           <div>
@@ -494,7 +519,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
       </div>
     </section>
   </Parallax>
-  <section className="rounded-[30px]  relative z-[999999999] bg-white mt-[-100px] py-[100px]">
+  <section className="rounded-[30px]  relative z-[99999] bg-white mt-[-100px] py-[100px]">
     <div>
         <div className="txt p-8">
             <h4 className="text-[32px] font-semibold">Premium Speakers</h4>
@@ -502,10 +527,10 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
         </div>
         <div className="bottom-wrap flex flex-col lg:flex-row p-8">
             <div className="left w-full lg:w-[62%] pb-5 lg:pb-0  pr-0 lg:pr-6">
-                <Image src='scene_02_kv.jpg' width={1000} height={420}  placeholder="empty" className="rounded-xl" loading="lazy" loader={myLoader}></Image>
+                <Image src='scene_02_kv.jpg' width={1000} height={420}   data-aos="fade-right" data-aos-delay="450" placeholder="empty" className="rounded-xl" loading="lazy" loader={myLoader}></Image>
             </div>
             <div className="right w-full lg:w-[38%]">
-                <div className="card rounded-2xl flex flex-col justify-center items-center h-full p-5 border-2 border-gray-800">
+                <div  data-aos="fade-up" data-aos-delay="650" className="card rounded-2xl flex flex-col justify-center items-center h-full p-5 border-2 border-gray-800">
                     <div className="title">
                         <b className="text-center">GOODS FOR HAMBURGER SHOP</b>
                         <p className="text-center">Premium Speakers</p>
@@ -523,7 +548,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
   </section>
         <section className="mt-[100px]">
             <div className="txt">
-                <h1 className="text-[50px] text-center leading-normal font-extrabold text-black"> ENJOY THE TIME <br/>KIDS & DULTS</h1>
+                <h1  data-aos="zoom-in-up" data-aos-delay="650" className="text-[50px] text-center leading-normal font-extrabold text-black"> ENJOY THE TIME <br/>KIDS & DULTS</h1>
                 <Link href='/' className="w-[200px] font-extrabold py-2  border-2 mx-auto text-center border-black">BUY</Link>
             </div>
         <iframe src='https://my.spline.design/nintendoswitchcopy-90747e739d7d06f2a2ae34d6bf3789bd/' frameborder='0' width='100%' height='600px'></iframe>
@@ -548,17 +573,300 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
         </section>
        <section>
         <div className="relative">
-            <div className="txt bg-[#85dc1c] text-white font-semibold
- absolute left-[38%] py-5  px-10 top-[45%] z-[9999]">
-                <h4 className="">折扣連連！最後機會，立即行動！</h4>
-                
-            </div>
+           
             <SmoothParallaxScroll/>
         </div>
             
      
-
         </section> 
+        <section className="h-[130vh]">
+       <div className="flex w-full justify-center items-center flex-col">
+      <Tabs aria-label="Options" className="bg-transparent">
+    <Tab key="photos" className="h-[100px] bg-transparent" title={<TabMenu />}>
+      <Card>
+        <CardBody>
+           <SwiperCarousel01/>
+        </CardBody>
+      </Card>
+    </Tab>
+    <Tab key="music" className="h-[100px] bg-transparent" title={<TabMenu />}>
+      <Card>
+        <CardBody>
+            <SwiperCarousel02/>
+        </CardBody>
+      </Card>
+    </Tab>
+    <Tab key="videos" className="h-[100px] bg-transparent" title={<TabMenu />}>
+      <Card>
+        <CardBody>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </CardBody>
+      </Card>
+    </Tab>
+  </Tabs>
+    </div>  
+        </section>
+        <section>
+
+              <div className="marquee  bg-white notice-modal mx-auto w-[100vw] rounded-[5px] border-black border  flex flex-row p-1 bg-whote  top-0">
+      
+        <Marquee pauseOnHover	 className='wrap w-[80%] overflow-hidden'>
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116801/116801_1721876077819_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116801/116801_1721876077819_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+
+            <div className="w-[230px] border-4 overflow-hidden mx-4 border-black rounded-[10px] ">
+                <div className="txt">
+                <div class="relative">
+ <div class="relative">
+        <video
+        width="320"
+        height="240"
+        poster="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_to.jpg"
+        className="w-full h-full object-cover"
+        controls
+        autoPlay='true'
+        loop
+        // Auto play attribute for autoplay
+       
+      >
+        <source
+          src="https://static-sb.dot-st.com/jp/ja/csvideo/116884/116884_1721900422709_l.mp4"
+          type="video/mp4"
+        />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+
+                </div>
+               
+            </div>
+        
+        </Marquee>
+        
+      </div>
+        </section>
 
 
 

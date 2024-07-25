@@ -19,11 +19,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const myLoader01 = ({ src, width, quality, placeholder }) => {
-    return `https://cdn1.beams.co.jp/special/kids_summer_2024/assets/images/chapter_1/${src}?w=${width}?p=${placeholder}`
+    return `https://www.danone.co.jp/oikos/assets/renewal/img/${src}?w=${width}?p=${placeholder}`
 }
-const food01 = ({ src, width, quality, placeholder }) => {
-    return `https://cdn1.beams.co.jp/special/kids_summer_2024/assets/images/chapter_1/${src}?w=${width}?p=${placeholder}`
-}
+
 export default () => {
     // const sliderRef = useRef(null);
     // const handlePrev = useCallback(() => {
@@ -37,8 +35,20 @@ export default () => {
     // }, []);
 
     return (
-        <div className='w-[1300px]  m-0 p-0'>
-           
+        <div className='flex flex-col justify-center items-center'>
+        <div className='w-[1300px] relative  m-0 p-0'>
+            {/* <div className='modal01 inline w-[400px]  absolute z-[9999999] top-0 right-[170px]'>
+                <div className="close absolute right-2 top-3 border-2 border-black bg-black z-[9999999] rounded-full w-[40px] h-[40px] border-green">
+                    
+
+                </div>
+                <div className="wrap shadow-2xl w-[400px] rounded-xl h-[250px] bg-gray-100 flex justify-center items-center">
+                     <div className="txt">
+                        <p className='text-[#212121] text-[32px] '>還有更多商品！！</p>
+                        <b>點我繼續選購→</b>
+                     </div>
+                </div>
+            </div> */}
             <Swiper
             data-aos="zoom-in-up" data-aos-duration="750" data-aos-delay="450"
             
@@ -77,65 +87,188 @@ export default () => {
                             <Card className="pt-4 bg-white p-0 m-0 shadow-none">
                                 <CardHeader className="bg-[#ed3254]">
                                   <div className="txt text-white text-center  p-4">
+                                 高タンパク質 ゴールデンパイナ
+                                  </div>
+                                </CardHeader>
+                              <CardBody className=" p-[40px] ">
+                                    <Image
+                                        loading='lazy'
+                                        alt="Card background"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_Blueberry_01.png"
+                                        loader={myLoader01}
+                                        width={500}
+                                        height={500}
+                                        
+                                    />
+                                       <div className="description">
+                                        <b className='text-black'>Price: $250</b>
+                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
+                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                      
+
+                  
+
+               
+                </SwiperSlide>
+                       <SwiperSlide className=' w-full  ' >
+
+
+
+                            <Card className="pt-4 bg-white p-0 m-0 shadow-none">
+                                <CardHeader className="bg-[#ed3254]">
+                                  <div className="txt text-white text-center  p-4">
+                                 高タンパク質 プレーン・加糖
+                                  </div>
+                                </CardHeader>
+                              <CardBody className=" p-[40px] ">
+                                    <Image
+                                        loading='lazy'
+                                        alt="Card background"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_goldenpineapple.png"
+                                        loader={myLoader01}
+                                        width={500}
+                                        height={500}
+                                        
+                                    />
+                                       <div className="description">
+                                        <b className='text-black'>Price: $250</b>
+                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
+                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                      
+
+                  
+
+               
+                </SwiperSlide>
+                 <SwiperSlide className=' w-full  ' >
+
+
+
+                            <Card className="pt-4 bg-white p-0 m-0 shadow-none">
+                                <CardHeader className="bg-[#ed3254]">
+                                  <div className="txt text-white text-center  p-4">
+                                  高タンパク質 ストロベリー
+                                  </div>
+                                </CardHeader>
+                              <CardBody className=" p-[40px] ">
+                                    <Image
+                                        loading='lazy'
+                                        alt="Card background"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_Plain_NS_01.png"
+                                        loader={myLoader01}
+                                        width={500}
+                                        height={500}
+                                        
+                                    />
+                                       <div className="description">
+                                        <b className='text-black'>Price: $250</b>
+                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
+                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                      
+
+                  
+
+               
+                </SwiperSlide>
+                 <SwiperSlide className=' w-full  ' >
+
+
+
+                            <Card className="pt-4 bg-white p-0 m-0 shadow-none">
+                                <CardHeader className="bg-[#ed3254]">
+                                  <div className="txt text-white text-center  p-4">
+                               中容量 プレーン・砂糖不使用
+                                  </div>
+                                </CardHeader>
+                              <CardBody className=" p-[40px] ">
+                                    <Image
+                                        loading='lazy'
+                                        alt="Card background"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_Plain_01.png"
+                                        loader={myLoader01}
+                                        width={500}
+                                        height={500}
+                                        
+                                    />
+                                       <div className="description">
+                                        <b className='text-black'>Price: $250</b>
+                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
+                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                      
+
+                  
+
+               
+                </SwiperSlide>
+                 <SwiperSlide className=' w-full  ' >
+
+
+
+                            <Card className="pt-4 bg-white p-0 m-0 shadow-none">
+                                <CardHeader className="bg-[#ed3254]">
+                                  <div className="txt text-white text-center  p-4">
+                                   高タンパク質 ゴールデンパイナップル
+                                  </div>
+                                </CardHeader>
+                              <CardBody className=" p-[40px] ">
+                                    <Image
+                                        loading='lazy'
+                                        alt="Card background"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_Strawberry_01.png"
+                                        loader={myLoader01}
+                                        width={500}
+                                        height={500}
+                                        
+                                    />
+                                       <div className="description">
+                                        <b className='text-black'>Price: $250</b>
+                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
+                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                    </div>
+                                </CardBody>
+                            </Card>
+                      
+
+                  
+
+               
+                </SwiperSlide>
+                 <SwiperSlide className=' w-full  ' >
+
+
+
+                            <Card className="pt-4 bg-white p-0 m-0 shadow-none">
+                                <CardHeader className="bg-[#ed3254]">
+                                  <div className="txt text-white text-center  p-4">
                                    高吸収タンパク質
                                   </div>
                                 </CardHeader>
-                                <CardBody className="flex   flex-col relative px-0">
-                                    <div className='comments absolute right-1 top-1'>
-                                        <div class="commemt commemt--2">
-                                            <div className="commemt__fukidashi \" >
-                                               <Image src='girl_1.png' loader={myLoader01} width={50} height={50}></Image>
-                                                
-                                            </div>
-                                            
-                                           <div className="commemt__fukidashi top-[-40px] mt-[-50px] z-[99999]" >
-                                               <Image src='cap_1_2.svg' loader={myLoader01} width={150} height={150}></Image>
-                                                
-                                            </div>
-                                            </div>
-                                    </div>
+                              <CardBody className=" p-[40px] ">
                                     <Image
                                         loading='lazy'
                                         alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_2.jpg"
+                                        className="rounded-xl mb-[30px]"
+                                        src="OIKOS_Blueberry_01.png"
                                         loader={myLoader01}
                                         width={500}
-                                        height={300}
-                                        
-                                    />
-                                    <div className="description bg-[#ef4023] p-5">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px] mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-                         <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_3.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
+                                        height={500}
                                         
                                     />
                                        <div className="description">
@@ -150,186 +283,17 @@ export default () => {
                   
 
                
-                </SwiperSlide>
-                          <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_1.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
-                                        
-                                    />
-                                       <div className="description">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-                 <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_1.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
-                                        
-                                    />
-                                       <div className="description">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-                 <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_1.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
-                                        
-                                    />
-                                       <div className="description">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-                 <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_1.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
-                                        
-                                    />
-                                       <div className="description">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-
-                 <SwiperSlide className=' bg-white'>
-
-
-
-                            <Card className="py-4 bg-white p-0 m-0 shadow-none">
-                                <CardHeader className="">
-                                  <div className="txt  p-4">
-                                    
-                                  </div>
-                                </CardHeader>
-                                <CardBody className=" pb-[30px]">
-                                    <Image
-                                        loading='lazy'
-                                        alt="Card background"
-                                        className="rounded-xl"
-                                        src="item_1_1.jpg"
-                                        loader={myLoader01}
-                                        width={500}
-                                        height={300}
-                                        
-                                    />
-                                       <div className="description">
-                                        <b className='text-black'>Price: $250</b>
-                                        <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                      
-
-                  
-
-               
-                </SwiperSlide>
-
-                         
-         
+                </SwiperSlide>         
             </Swiper>
             {/* <div className="prev-arrow" onClick={handlePrev} />
             <div className="next-arrow" onClick={handleNext} /> */}
         </div>
-
+         <div className="bg-white w-full min-h-[200px] flex items-center justify-center">
+      <button className="px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+        選購更多商品！！！
+      </button>
+    </div>
+</div>
 
         
     );

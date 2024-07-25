@@ -135,7 +135,7 @@ export default function App() {
                 </div>
                 <div className="mt-[30px] md:mt-0">
                   
-                    <div className="flex w-full md:mt-0 justify-center items-center align-middle flex-col   rounded-2xl dark:bg-black  ">
+                    <div className="flex w-full md:mt-0 justify-center items-center align-middle flex-col   rounded-2xl   ">
                      
                         <Tabs aria-label=" flex bg-white justify-center  Options">
                          

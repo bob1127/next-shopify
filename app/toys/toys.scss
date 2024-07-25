@@ -1,0 +1,14 @@
+/* style.css */
+
+.specialTab {
+  font-family: "YourSpecialFont", sans-serif;
+  /* Replace with your special font */
+  font-size: 40px;
+  transition: color 0.3s ease;
+  /* Smooth color transition on hover */
+}
+
+.specialTab:hover {
+  color: #ff0000;
+  /* Example color change on hover */
+}
