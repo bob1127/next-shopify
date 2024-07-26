@@ -546,7 +546,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
     </div>
 
   </section>
-        <section className="mt-[100px]">
+        <section className="mt-[100px] hidden md:block">
             <div className="txt">
                 <h1  data-aos="zoom-in-up" data-aos-delay="650" className="text-[50px] text-center leading-normal font-extrabold text-black"> ENJOY THE TIME <br/>KIDS & DULTS</h1>
                 <Link href='/' className="w-[200px] font-extrabold py-2  border-2 mx-auto text-center border-black">BUY</Link>
