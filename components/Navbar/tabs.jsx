@@ -95,8 +95,8 @@ const SlideTabs = () => {
       {/* Render each tab with dynamic properties */}
 
       <Link href='/'>   <Tab setPosition={setPosition}> <b className="font-extrabold ">首頁</b> Home</Tab></Link>
-   
-      <Tab setPosition={setPosition}><b className="font-extrabold ">食品</b> Foods</Tab>
+    <Link href="/Food" className="cursor-pointer">
+      <Tab setPosition={setPosition}><b className="font-extrabold ">食品</b> Foods</Tab></Link>
           <Link href="/Clothes" className="cursor-pointer">
       <Tab setPosition={setPosition}><b className="font-extrabold ">服飾</b> Clothes</Tab></Link>
 
