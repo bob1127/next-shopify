@@ -115,7 +115,7 @@ export const HoverImageLinks = () => {
     <section className=" p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="蝦皮賣場(shopee)"
+          heading="蝦皮賣場(Shoppee)"
           subheading="Learn what we do here"
           imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240704_staff.jpg"
           href="#"

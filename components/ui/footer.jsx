@@ -24,11 +24,11 @@ const myLoader = ({ src, width, quality, placeholder }) => {
 export default function Footer() {
 
   return (
-    <div className='hidden md:block'>
+    <div className='block'>
 
     
-    <footer className='py-[180px] w-full px-[90px] bg-[#2b72e5]  flex-row flex justify-center'>
-      <div className="top-section w-1/2 border  border-white">
+    <footer className='md:py-[80px] py-[20px] lg:py-[180px] w-full px-[15px] md:px-[30px] lg:px-[90px] bg-[#2b72e5]  flex-col md:flex-row flex justify-center'>
+      <div className="top-section p-[30px] lg:p-[10px] w-full md:w-1/2 border  border-white">
 
         <div className="logo py-[30px]">
              <b className='text-[26px] mb-[20px] font-bold'>
@@ -70,8 +70,8 @@ export default function Footer() {
          </div>
         
       </div>
-       <div className="bottom-section flex justify-center items-center flex-row w-1/2 border border-white">
-         <div className="left  w-[60%] pr-5">
+       <div className="bottom-section flex-col flex justify-center items-center lg:flex-row md:w-1/2 w-full p-[30px] lg:p-[10px] border border-white">
+         <div className="left  w-full lg:w-[60%] pr-5">
              <div className="txt flex justify-center flex-col items-center">
             <p className='text-[14px] w-2/3 font-bold text-white'>ニコアンドのアイデアや
 クリエイティブを活かした
@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
           
          </div>
-         <div className="right w-[40%]">
+         <div className="right w-full flex justify-center items-center lg:w-[40%]">
               <img className='w-[200px] h-[200px]' src="https://www.nikoand.jp/wp-content/uploads/2024/07/UP_main_SQ-1024x1024.jpg" alt="" />
        
           

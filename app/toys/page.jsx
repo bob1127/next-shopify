@@ -495,7 +495,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
               typeSpeed={70}
               deleteSpeed={80}
               delaySpeed={1400}
-              className="custom-typewriter"
+              className="custom-typewriter text-[40px] font-extrabold"
             />
             <h2 style={{ color: 'red', fontWeight: 'bold' }}>
               {/* Style will be inherited from the parent element */}
@@ -532,7 +532,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             <div className="right w-full lg:w-[38%]">
                 <div  data-aos="fade-up" data-aos-delay="650" className="card rounded-2xl flex flex-col justify-center items-center h-full p-5 border-2 border-gray-800">
                     <div className="title">
-                        <b className="text-center">GOODS FOR HAMBURGER SHOP</b>
+                        <b className="text-center bg-[#3b454b] text-[18px] font-bold">GOODS FOR HAMBURGER SHOP</b>
                         <p className="text-center">Premium Speakers</p>
                     </div>
                     <div className="slider">

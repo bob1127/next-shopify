@@ -90,7 +90,7 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black  bg-white p-1"
+      className="relative mx-auto md:flex w-fit rounded-full border-2 border-black  bg-white p-1   hidden "
     >
       {/* Render each tab with dynamic properties */}
 
@@ -102,7 +102,9 @@ const SlideTabs = () => {
 
       <Link href="/toys" className="cursor-pointer">
       <Tab setPosition={setPosition}><b className="font-extrabold cursor-pointer" >       玩具 </b> Toys </Tab></Link>
-      <Tab setPosition={setPosition}><b className="font-extrabold ">文章</b> Blog</Tab>
+
+        <Link href="/Blog" className="cursor-pointer">
+      <Tab setPosition={setPosition}><b className="font-extrabold ">文章</b> Blog</Tab></Link>
 
       {/* Render the cursor with its position animated */}
       <Cursor position={position} />

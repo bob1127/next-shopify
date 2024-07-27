@@ -108,19 +108,24 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 
 
 
+
+
+     <h1 className='text-[50px] text-black font-extrabold text-center'>Blog</h1>
+
+
       <section className='h-full  bg-white border-3 border-gray-200 rounded-2xl m-7 py-[80px]'>
         <div className="txt border border-gray-400">
             {/* <h1 className='w-2/3 text-[35px] font-bold'>Website Design and Built Fast With AI</h1> */}
             <div className="wrap flex-col flex lg:flex-row justify-center items-center ">
-                <div className="left ml-0 bg-fixed bg-contain lg:ml-[-100px] w-full lg:w-[50%] delay-75 duration-300 hover:scale-0 md:hover:scale-[1.15] bg-[url('https://www.nikoand.jp/wp-content/uploads/2024/07/bnr_town_guide_tokai_a_1080_1080.jpg')] hover:w-[70%] bg-gray-500 rounded-2xl h-[450px]">
+                <div className="left ml-0 bg-fixed bg-contain lg:ml-[-100px] w-full lg:w-[50%] delay-75 duration-300 hover:scale-[1.15] bg-[url('https://www.nikoand.jp/wp-content/uploads/2024/07/bnr_town_guide_tokai_a_1080_1080.jpg')] hover:w-[70%] bg-gray-500 rounded-2xl h-[450px]">
 
                     
                     
                 </div>
-                <div className="right w-full pl-0 lg:pl-[40px] flex justify-center items-center lg:w-[60%]">
-                    <div className="txt w-[90%] lg:w-[70%] py-[50px]">
+                <div className="right pl-[40px] flex w-full justify-center items-center lg:w-[60%]">
+                    <div className="txt w-[70%] py-[50px]">
                         <h3 className='text-[30px] text-gray-500'>SiteMap to</h3>
-                        <h4 className='text-[60px] pb-[-30px] font-extrabold bg-[#7ccdf3] '>WIRE FRAME</h4>
+                        <h4 className='text-[60px] font-extrabold'>WIRE FRAME</h4>
                         <p className='w-full'>Achieve your first draft in the first minute. Sit back and watch AI magically turn your Sitemap into wireframes in one click generating real components un-styled with copy. Getting sign off has never been so easy.
                             
                         </p>

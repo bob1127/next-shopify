@@ -46,7 +46,7 @@ export default function RootLayout({
               </NextThemesProvider>
             </NextUIProvider>
             <Banner />
-            <FooterMobile />
+            {/* <FooterMobile /> */}
             <Footer />
           </div>
         </body>
