@@ -2,9 +2,10 @@
 
 import styles from './styles.module.css'
 import Image from 'next/image';
-
+import SwiperCarousel from '../../components/SwiperCarouselFood/index.jsx'
 const backgroundImage = 'https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200';
-
+import ShiftDrop from '../../components/ShiftingDropDown/index.jsx'
+import SwiperCarouselFood from '../../components/SwiperCarouselFood/index.jsx'
 
     
 
@@ -107,7 +108,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 <div className="bg-[#f1f0ee] py-[100px]">
 
 
-
+<SwiperCarousel/>
       <section className='h-full  bg-white border-3 border-gray-200 rounded-2xl m-7 py-[80px]'>
         <div className="txt border border-gray-400">
             {/* <h1 className='w-2/3 text-[35px] font-bold'>Website Design and Built Fast With AI</h1> */}
@@ -143,24 +144,8 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                                     <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
                                 </div>
                             </div>
-                             <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-
-                                    </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
-                                </div>
-                            </div>
-                             <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-
-                                    </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
-                                </div>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                     
@@ -179,7 +164,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             </div>
         </div>
         <div className="wrap w-full justify-center items-center flex-wrap px-[20px] md:px-[50px] lg:px-[110px] flex flex-row">
-            <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9]   data-aos="fade-right" data-aos-delay="450"  m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
+            <div className='border duration-750 overflow-hidden hover:bg-[#cce7a4]   data-aos="fade-right" data-aos-delay="450"  m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
                 <div className="txt py-[15px]">
                     <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
                     <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
@@ -203,10 +188,10 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                 </div>
                 
             </div>
-              <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9] delay-75 m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
+              <div className='border duration-750 overflow-hidden hover:bg-[#cee1e9] delay-75 m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
                 <div className="txt py-[15px]">
                     <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
-                    <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
+                    <p className='text-[13px] text-center  w-2/3 mx-auto' data-aos-duration-500>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
 </p>
                 
                 </div>
@@ -216,6 +201,46 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                 
             </div>
         </div>
+      </section>
+      <section>
+        <ShiftDrop/>
+      </section>
+
+      <section className='bg-[#0f6efd] relative'>
+        <div className="banner01 h-[100vh]  overflow-hidden relative">
+             <div className="img w-[1100px]  z-[999] absolute bottom-[-1000px] left-[16%]" data-aos="fade-up" data-aos-delay="200" >
+                <img src="https://bowery.co/wp-content/uploads/2023/04/baby-butter-1.webp" className='w-full' alt="" />
+            
+         </div>
+         <div className="txt  absolute  left-[15%] top-[0px] z-[99]" data-aos="fade-down" data-aos-delay="650" >
+            <h3 className='text-white leading-normal text-[320px] font-extrabold '>EAT UP
+</h3>
+         </div>
+          
+         
+        </div>
+          <div className="txt  absolute left-[6%] bottom-[90px] z-[999999]" data-aos-duration='500' data-aos="zoom-in-up"data-aos-delay='700'>
+               <p className='text-[16px] mx-auto text-white text-center w-[60%]'>Deep inside our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of food. de our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of </p>
+
+               <a href="" className='mt-7 border-2 bprder-white inline-block text-[14px] ml-[40%] font-bold text-black bg-white rounded-[30px] text-center w-[200px] p-3'>BUY NOW</a>
+         </div>
+      </section>
+
+      <section className='w-full py-[100px]'>
+         <div className="left w-2/3">
+         <div class="bg-gray-300 bg-opacity-50 backdrop-blur-lg p-8">
+            <img className='w-full' src="https://image.dive-hiroshima.com/wp-content/uploads/2022/06/オーナー.jpg" alt="" />
+  <h1 class="text-4xl font-bold text-center text-gray-800">毛玻璃背景效果</h1>
+  <p class="text-lg text-gray-700 mt-4">
+    這是一個使用 Tailwind CSS 實現的毛玻璃背景效果的範例。
+  </p>
+</div>
+
+            
+         </div>
+          <div className="right w-1/3">
+            
+          </div>
       </section>
 
          

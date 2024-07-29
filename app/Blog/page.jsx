@@ -133,19 +133,25 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                             <div className='border  p-[15px] border-black'>
                                 <div className="txt">
                                     <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
+                                        <img src="" alt="" />
+                                        <div className="txt">
+                                            <h4 className='bg-gradient-to-b from-transparent via-green-500 to-transparent'>Dream Amiのクリスマス。</h4>
+                                        </div>
 
                                     </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
+                                  
                                 </div>
                             </div>
                           <div className='border  p-[15px] border-black'>
                                 <div className="txt">
                                     <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
+                                        <img src="" alt="" />
+                                        <div className="txt">
+                                            <h4 className=''></h4>
+                                        </div>
 
                                     </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
+                                 
                                 </div>
                             </div>
                              <div className='border  p-[15px] border-black'>
@@ -187,7 +193,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9]   data-aos="fade-right" data-aos-delay="450"  m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
                 <div className="txt py-[15px]">
                     <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
-                    <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
+                    <p className='text-[13px] data-aos="fade-right" data-aos-delay="450"  text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
 </p>
                 
                 </div>
@@ -196,7 +202,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                 </div>
                 
             </div>
-               <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9]  delay-75 m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
+               <div className='border  overflow-hidden hover:bg-[#dfcee9]  delay-75 m-[10px] w-full md:w-[360px] border-black  bg-white rounded-xl'>
                 <div className="txt py-[15px]">
                     <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
                     <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
