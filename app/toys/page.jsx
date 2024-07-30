@@ -366,7 +366,7 @@ const Product = props => (
         {/* meta seo tag */}   
         <title>toy
         </title>
-        <meta key="description" name="description" content="Calibration-free micro disposable pH electrode/Humming Probe UH1 pH electrode has a disposable design that does not require pH calibration solution.  Ready to use ,ultra small sample requirement ,suitable for precious samples and easily contaminated or passivated pH electrode surfaces and special samples.There is no need to use electrode preservation solution, portable and suitable for outdoor use without power supply. Acid-base test electrode/pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution" />
+        <meta key="description" name="description" content="" />
         <meta name='keywords' content='pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -378,7 +378,7 @@ const Product = props => (
         <meta property="og:title" content="
 Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 " />
-        <meta property="og:description" content="Calibration-free micro disposable pH electrode/Humming Probe UH1 pH electrode has a disposable design that does not require pH calibration solution.  Ready to use ,ultra small sample requirement ,suitable for precious samples and easily contaminated or passivated pH electrode surfaces and special samples.There is no need to use electrode preservation solution, portable and suitable for outdoor use without power supply. Acid-base test electrode/pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution
+        <meta property="og:description" content="
 " />
         <meta property="og:image" content="https://ultraehp.com/images/Ultra Video/UH1/中文版/YouTube-UH1-中文.jpg" />
 
@@ -529,7 +529,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             <div className="left w-full lg:w-[62%] pb-5 lg:pb-0  pr-0 lg:pr-6">
                 <Image src='scene_02_kv.jpg' width={1000} height={420}   data-aos="fade-right" data-aos-delay="450" placeholder="empty" className="rounded-xl" loading="lazy" loader={myLoader}></Image>
             </div>
-            <div className="right w-full lg:w-[38%]">
+            <div className="right  md:p-[50px] lg:p-[0px] p-[0px] w-full lg:w-[38%]">
                 <div  data-aos="fade-up" data-aos-delay="650" className="card rounded-2xl flex flex-col justify-center items-center h-full p-5 border-2 border-gray-800">
                     <div className="title">
                         <b className="text-center bg-[#3b454b] text-[18px] font-bold">GOODS FOR HAMBURGER SHOP</b>

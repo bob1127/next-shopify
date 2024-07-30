@@ -31,7 +31,7 @@ export default () => {
     // }, []);
 
     return (
-        <div className='w-[480px] md:w-[450px] lg:w-[360px] bg-white m-0 p-0'>
+        <div className='w-[250px] sm:w-[400px] md:w-[450px] lg:w-[360px] bg-white m-0 p-0'>
            
             <Swiper
             

@@ -11,7 +11,8 @@ import Marquee from 'react-fast-marquee'
 // Define SlideTabsExample component
 export const SlideTabsExample = () => {
   return (
-    <div className="bg-[#2b72e5] border-3 border-black  pt-8 pb-6 flex mx-auto left-[40%] justify-center items-center fixed w-[100vw] z-[999999]">
+   
+          <div className="bg-[#2b72e5] border-3 border-black  pt-8 pb-6 flex mx-auto left-[40%]   justify-center  items-center fixed  w-[100%] z-[999999]">
       <div className="marquee fixed bg-white notice-modal mx-auto w-[100vw] rounded-[5px] border-black border  flex flex-row p-1 bg-whote  top-0">
         <img className="w-[25px] bg-white border rounded-full h-[25px]" src="https://www.nikoand.jp/wp-content/uploads/2024/03/teraai.png" alt="" />
         <Marquee>
@@ -71,6 +72,7 @@ export const SlideTabsExample = () => {
       </div>
      
     </div>
+      
   );
 };
 

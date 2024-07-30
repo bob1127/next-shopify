@@ -2,9 +2,7 @@
   margin: 0 auto;
 
   width: 100%;
- 
-  height: 600px;
-  padding: 40px 0;
+
 }
 /* .img-wrap{
     height: 300px;
@@ -17,7 +15,7 @@
 .card-item{
     border-radius: 20px;
  
-    height: 480px;
+  
     
    
     display: flex;
@@ -27,8 +25,6 @@
     
  
 
-    border: 1px solid #e1e1e1;
-    
   
     
     
@@ -39,12 +35,12 @@
 }
 .section_others .txt{
   width: 300px;
-    height: 300px;
+   
     display: flex;
     justify-content: start;
     align-items: center;
     
-    /* border: 1px solid #000; */
+
     overflow: scroll;
   
     

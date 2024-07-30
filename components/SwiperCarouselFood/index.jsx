@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
 
+
+
+const video =[
+  "",
+]
 const imgs = [
      "https://www.asahibeer.co.jp/ginon/img/kv_pc01.jpg",
     "https://nomca.jp/cdn/shop/files/KV_1.png?v=1718706980&width=1500",

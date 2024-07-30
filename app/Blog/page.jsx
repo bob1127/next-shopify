@@ -2,6 +2,8 @@
 
 import styles from './styles.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
+import ReactSlick from '../../components/ReactSlick/ImageSlider.jsx'
 
 const backgroundImage = 'https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200';
 
@@ -82,7 +84,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 
 {/*
         <AnimatedTabs /> */}
-        <div>
+        <div className='selection:bg-[#ffe637]'>
             {/* <div className='h-[100vh] items-center flex justify-center bg-black'>
                
             </div> */}
@@ -95,6 +97,292 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             {/* JSON-LD for Blog Post */}
 
             {/* 結構化資料 UH1 */}
+            <section >
+                <div className='py-[10px] flex flex-col lg:flex-row '>
+                     <div className="title w-full lg:w-1/2  p-[50px] mt-[100px]">
+                    <b> <span className='text-[30px] font-bold text-[#6fcfeb]'>BE</span>  <span className='text-[30px] font-bold text-[#eb5c01]'>FES!!</span>  <span className='text-[30px] font-bold text-[#6fcfeb]'>TOKYO</span> </b>
+                    <h4 className=' font-bold text-[62px]'>GO TO!! SHOP LIST</h4>
+                    <p className='text-[16px]'>東京のあの店をお得に楽しめる!?
+
+</p>
+                    
+                 </div>
+                 <div className="bottom-wrap flex  flex-col justify-center items-center mt-[65px] p-[50px] w-full lg:w-1/2">
+                  <div className=''>
+                      <b className='font-bold text-left'>各都市で展開されるオリジナルコンテンツにも注目!!</b>
+                    <p className='font-normal  w-2/3 text-[12px] text-gray-800'>フェスが行われる各会場内や周辺施設、周辺エリアのビームスなどで、都市ごとに趣向をこらしたオリジナルのイベントコンテンツを展開します!! 各都市共通で行われる大抽選会もお楽しみに!!
+※全イベントは新型コロナウイルス感染症の感染拡大の状況により、予告なく内容を変更・中止とさせていただく場合がございます。</p>
+                  </div>
+                 </div>
+                </div>
+                <div className='flex flex-wrap'>
+                    <div className="article-wrap   pl-[60px] py-[40px]">
+                        <div className="card">
+                            <div className="title flex items-center mb-[20px]">
+                                <div className="circle bg-[#eb5c01] text-white justify-center w-[60px] h-[60px] flex items-center  p-3 rounded-full">
+                                    No1
+
+                                </div>
+                                <b className='ml-[15px] text-[20px] font-bold'>Baccaiun</b>
+                                
+                            </div>
+                            <div className="content flex overflow-hidden w-[600px] ">
+                                <div className="left w-1/2">
+                                    <ReactSlick/>
+                                </div>
+                                <div className="right  p-6 bg-[#eb5c01] w-1/2 py-[0px]">
+                                    
+
+                                    <div className="img mx-auto border-2 rounded-full border-white w-[70px] my-[20px] h-[70px]">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="txt">
+                                        <b className='text-white text-[14px] text-center'>ビームス クリエイティブ
+
+井手 美月</b>
+                                        <p className='text-white font-normal text-[12px] text-center'>
+                                    laboriosam doloribus molestias iusto impedit delectus eius dicta provident vero. Repudiandae.
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                
+                            </div>
+                        </div>
+                        <div className="text-content mt-[50px] w-full lg:w-[600px]">
+                            <b className='text-[18px] font-bold mb-3'>オーダー自転車を手にいれる。</b>
+                            <p className='text-[12px] lg:w-full w-3/4 font-bold'>“一生を共にできる自転車を作る"という1976年の創業当時から変わらぬ想いを貫いている自転車屋。現在二代目。お客様の要望に合わせて国内のフレームビルダーにて制作されるクロモリフレームは、まさに一生物です。“日本製のオーダー自転車を手の届く価格で提供したい"という店主の想いも嬉しい。自転車を“移動の手段"から“人生を楽しむため"のものへ。世界でたった一台、あなただけの自転車を是非手に入れてください。
+
+</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                     <div className="article-wrap   pl-[60px] py-[40px]">
+                        <div className="card">
+                            <div className="title flex items-center mb-[20px]">
+                                <div className="circle bg-[#eb5c01] text-white justify-center w-[60px] h-[60px] flex items-center  p-3 rounded-full">
+                                    No1
+
+                                </div>
+                                <b className='ml-[15px] text-[20px] font-bold'>Baccaiun</b>
+                                
+                            </div>
+                            <div className="content flex overflow-hidden w-[600px]">
+                                <div className="left w-1/2">
+                                    <ReactSlick/>
+                                </div>
+                                <div className="right  p-6 bg-[#eb5c01] w-1/2 py-[0px]">
+                                    
+
+                                    <div className="img mx-auto border-2 rounded-full border-white w-[70px] my-[20px] h-[70px]">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="txt">
+                                        <b className='text-white text-[14px] text-center'>ビームス クリエイティブ
+
+井手 美月</b>
+                                        <p className='text-white font-normal text-[12px] text-center'>
+                                    laboriosam doloribus molestias iusto impedit delectus eius dicta provident vero. Repudiandae.
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                
+                            </div>
+                        </div>
+                        <div className="text-content mt-[50px] w-full lg:w-[600px]">
+                            <b className='text-[18px] font-bold mb-3'>オーダー自転車を手にいれる。</b>
+                            <p className='text-[12px] lg:w-full w-3/4 font-bold'>“一生を共にできる自転車を作る"という1976年の創業当時から変わらぬ想いを貫いている自転車屋。現在二代目。お客様の要望に合わせて国内のフレームビルダーにて制作されるクロモリフレームは、まさに一生物です。“日本製のオーダー自転車を手の届く価格で提供したい"という店主の想いも嬉しい。自転車を“移動の手段"から“人生を楽しむため"のものへ。世界でたった一台、あなただけの自転車を是非手に入れてください。
+
+</p>
+                        </div>
+                        <div className="footer mt-5 p-2 w-full bg-[#d1e5ec] rounded-[40px]">
+                            <div className="left flex flex-col justify-center items-center   rounded-[40px] p-0 w-[22%] bg-[#2e9ac1]">
+                                <Link href='/BlogInner'>
+
+
+                                    <span className='text-white m-1 text-center text-[13px]'> Discount<br></br> 特典內容
+                                </span> 
+                                
+                                
+                                
+                                </Link>
+                           
+                                
+                                
+                                
+                                
+                            </div>
+                            <div className="right">
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                     <div className="article-wrap   pl-[60px] py-[40px]">
+                        <div className="card">
+                            <div className="title flex items-center mb-[20px]">
+                                <div className="circle bg-[#eb5c01] text-white justify-center w-[60px] h-[60px] flex items-center  p-3 rounded-full">
+                                    No1
+
+                                </div>
+                                <b className='ml-[15px] text-[20px] font-bold'>Baccaiun</b>
+                                
+                            </div>
+                            <div className="content flex overflow-hidden w-[600px]">
+                                <div className="left w-1/2">
+                                    <ReactSlick/>
+                                </div>
+                                <div className="right  p-6 bg-[#eb5c01] w-1/2 py-[0px]">
+                                    
+
+                                    <div className="img mx-auto border-2 rounded-full border-white w-[70px] my-[20px] h-[70px]">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="txt">
+                                        <b className='text-white text-[14px] text-center'>ビームス クリエイティブ
+
+井手 美月</b>
+                                        <p className='text-white font-normal text-[12px] text-center'>
+                                    laboriosam doloribus molestias iusto impedit delectus eius dicta provident vero. Repudiandae.
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                
+                            </div>
+                        </div>
+                        <div className="text-content mt-[50px] w-full lg:w-[600px]">
+                            <b className='text-[18px] font-bold mb-3'>オーダー自転車を手にいれる。</b>
+                            <p className='text-[12px] lg:w-full w-3/4 font-bold'>“一生を共にできる自転車を作る"という1976年の創業当時から変わらぬ想いを貫いている自転車屋。現在二代目。お客様の要望に合わせて国内のフレームビルダーにて制作されるクロモリフレームは、まさに一生物です。“日本製のオーダー自転車を手の届く価格で提供したい"という店主の想いも嬉しい。自転車を“移動の手段"から“人生を楽しむため"のものへ。世界でたった一台、あなただけの自転車を是非手に入れてください。
+
+</p>
+                        </div>
+                        <div className="footer mt-5 p-2 w-full bg-[#d1e5ec] rounded-[40px]">
+                            <div className="left flex flex-col justify-center items-center   rounded-[40px] p-0 w-[22%] bg-[#2e9ac1]">
+                                <Link href='/BlogInner'>
+
+
+                                    <span className='text-white m-1 text-center text-[13px]'> Discount<br></br> 特典內容
+                                </span> 
+                                
+                                
+                                
+                                </Link>
+                           
+                                
+                                
+                                
+                                
+                            </div>
+                            <div className="right">
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+                     <div className="article-wrap   pl-[60px] py-[40px]">
+                        <div className="card">
+                            <div className="title flex items-center mb-[20px]">
+                                <div className="circle bg-[#eb5c01] text-white justify-center w-[60px] h-[60px] flex items-center  p-3 rounded-full">
+                                    No1
+
+                                </div>
+                                <b className='ml-[15px] text-[20px] font-bold'>Baccaiun</b>
+                                
+                            </div>
+                            <div className="content flex overflow-hidden w-[600px]">
+                                <div className="left w-1/2">
+                                    <ReactSlick/>
+                                </div>
+                                <div className="right  p-6 bg-[#eb5c01] w-1/2 py-[0px]">
+                                    
+
+                                    <div className="img mx-auto border-2 rounded-full border-white w-[70px] my-[20px] h-[70px]">
+                                        <img src="" alt="" />
+                                    </div>
+                                    <div className="txt">
+                                        <b className='text-white text-[14px] text-center'>ビームス クリエイティブ
+
+井手 美月</b>
+                                        <p className='text-white font-normal text-[12px] text-center'>
+                                    laboriosam doloribus molestias iusto impedit delectus eius dicta provident vero. Repudiandae.
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                
+                            </div>
+                        </div>
+                        <div className="text-content mt-[50px] w-full lg:w-[600px]">
+                            <b className='text-[18px] font-bold mb-3'>オーダー自転車を手にいれる。</b>
+                            <p className='text-[12px] lg:w-full w-3/4 font-bold'>“一生を共にできる自転車を作る"という1976年の創業当時から変わらぬ想いを貫いている自転車屋。現在二代目。お客様の要望に合わせて国内のフレームビルダーにて制作されるクロモリフレームは、まさに一生物です。“日本製のオーダー自転車を手の届く価格で提供したい"という店主の想いも嬉しい。自転車を“移動の手段"から“人生を楽しむため"のものへ。世界でたった一台、あなただけの自転車を是非手に入れてください。
+
+</p>
+                        </div>
+                        <div className="footer mt-5 p-2 w-full bg-[#d1e5ec] rounded-[40px]">
+                            <div className="left flex flex-col justify-center items-center   rounded-[40px] p-0 w-[22%] bg-[#2e9ac1]">
+                                <Link href='/BlogInner'>
+
+
+                                    <span className='text-white m-1 text-center text-[13px]'> Discount<br></br> 特典內容
+                                </span> 
+                                
+                                
+                                
+                                </Link>
+                           
+                                
+                                
+                                
+                                
+                            </div>
+                            <div className="right">
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             <div className="bg-[#f1f0ee] ">
@@ -105,131 +393,12 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 </div >
 
 <div className="bg-[#f1f0ee] py-[100px]">
+         <section>
+            <h1 className='text-[50px] text-black font-extrabold'>BLOG title</h1>
+         </section>
 
 
 
-
-
-     <h1 className='text-[50px] text-black font-extrabold text-center'>Blog</h1>
-
-
-      <section className='h-full  bg-white border-3 border-gray-200 rounded-2xl m-7 py-[80px]'>
-        <div className="txt border border-gray-400">
-            {/* <h1 className='w-2/3 text-[35px] font-bold'>Website Design and Built Fast With AI</h1> */}
-            <div className="wrap flex-col flex lg:flex-row justify-center items-center ">
-                <div className="left ml-0 bg-fixed bg-contain lg:ml-[-100px] w-full lg:w-[50%] delay-75 duration-300 hover:scale-[1.15] bg-[url('https://www.nikoand.jp/wp-content/uploads/2024/07/bnr_town_guide_tokai_a_1080_1080.jpg')] hover:w-[70%] bg-gray-500 rounded-2xl h-[450px]">
-
-                    
-                    
-                </div>
-                <div className="right pl-[40px] flex w-full justify-center items-center lg:w-[60%]">
-                    <div className="txt w-[70%] py-[50px]">
-                        <h3 className='text-[30px] text-gray-500'>SiteMap to</h3>
-                        <h4 className='text-[60px] font-extrabold'>WIRE FRAME</h4>
-                        <p className='w-full'>Achieve your first draft in the first minute. Sit back and watch AI magically turn your Sitemap into wireframes in one click generating real components un-styled with copy. Getting sign off has never been so easy.
-                            
-                        </p>
-                        <div className='grid mt-4  grid-cols-2'>
-                            <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-                                        <img src="" alt="" />
-                                        <div className="txt">
-                                            <h4 className='bg-gradient-to-b from-transparent via-green-500 to-transparent'>Dream Amiのクリスマス。</h4>
-                                        </div>
-
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                          <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-                                        <img src="" alt="" />
-                                        <div className="txt">
-                                            <h4 className=''></h4>
-                                        </div>
-
-                                    </div>
-                                 
-                                </div>
-                            </div>
-                             <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-
-                                    </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
-                                </div>
-                            </div>
-                             <div className='border  p-[15px] border-black'>
-                                <div className="txt">
-                                    <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
-
-                                    </div>
-                                    <b>No1</b>
-                                    <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="top-wrap border w-[500px] py-[50px] mx-auto border-black  bg-white rounded-xl">
-            <div className="wrap">
-                <h2 className='text-[32px] font-extrabold text-center'>
-                    The Food Time
-                </h2>
-                
-            </div>
-        </div>
-        <div className="wrap w-full justify-center items-center flex-wrap px-[20px] md:px-[50px] lg:px-[110px] flex flex-row">
-            <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9]   data-aos="fade-right" data-aos-delay="450"  m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
-                <div className="txt py-[15px]">
-                    <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
-                    <p className='text-[13px] data-aos="fade-right" data-aos-delay="450"  text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
-</p>
-                
-                </div>
-                <div className="img">
-                    <Image  data-aos="zoom-in-up" data-aos-delay="450"  loader={myLoader} className='mb-[-130px] ml-[-140px] scale-[0.75]' width={800} height={500} src='658e3bcd32cb3de9f0460562_Styled%20Wireframe%20Image%202.svg'></Image>
-                </div>
-                
-            </div>
-               <div className='border  overflow-hidden hover:bg-[#dfcee9]  delay-75 m-[10px] w-full md:w-[360px] border-black  bg-white rounded-xl'>
-                <div className="txt py-[15px]">
-                    <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
-                    <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
-</p>
-                
-                </div>
-                <div className="img">
-                    <Image loader={myLoader}  data-aos="zoom-in-up" data-aos-delay="450" className='mb-[-130px] ml-[-140px] scale-[0.75]' width={800} height={500} src='658e3bcd32cb3de9f0460562_Styled%20Wireframe%20Image%202.svg'></Image>
-                </div>
-                
-            </div>
-              <div className='border duration-750 overflow-hidden hover:bg-[#dfcee9] delay-75 m-[10px] w-full md:w-[360px] border-black bg-white rounded-xl'>
-                <div className="txt py-[15px]">
-                    <h4 className='text-[32px] text-center'>UI STYLE GUID</h4>
-                    <p className='text-[13px] text-center w-2/3 mx-auto'>    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dignissimos quos voluptate aut eos? Vitae repudiandae et ullam quasi omnis optio eos enim non, natus soluta eum, inventore praesentium. Mollitia.
-</p>
-                
-                </div>
-                <div className="img">
-                    <Image loader={myLoader} data-aos="zoom-in-up" data-aos-delay="450"  className='mb-[-130px] ml-[-140px] scale-[0.75]' width={800} height={500} src='658e3bcd32cb3de9f0460562_Styled%20Wireframe%20Image%202.svg'></Image>
-                </div>
-                
-            </div>
-        </div>
-      </section>
-
-         
 </div>
 
 

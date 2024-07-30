@@ -2,6 +2,7 @@
 
 import styles from './styles.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 import SwiperCarousel from '../../components/SwiperCarouselFood/index.jsx'
 const backgroundImage = 'https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200';
 import ShiftDrop from '../../components/ShiftingDropDown/index.jsx'
@@ -57,7 +58,7 @@ const Product = props => (
         {/* meta seo tag */}   
         <title>Food
         </title>
-        <meta key="description" name="description" content="Calibration-free micro disposable pH electrode/Humming Probe UH1 pH electrode has a disposable design that does not require pH calibration solution.  Ready to use ,ultra small sample requirement ,suitable for precious samples and easily contaminated or passivated pH electrode surfaces and special samples.There is no need to use electrode preservation solution, portable and suitable for outdoor use without power supply. Acid-base test electrode/pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution" />
+        <meta key="description" name="description" content="" />
         <meta name='keywords' content='pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution' />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -69,7 +70,7 @@ const Product = props => (
         <meta property="og:title" content="
 Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 " />
-        <meta property="og:description" content="Calibration-free micro disposable pH electrode/Humming Probe UH1 pH electrode has a disposable design that does not require pH calibration solution.  Ready to use ,ultra small sample requirement ,suitable for precious samples and easily contaminated or passivated pH electrode surfaces and special samples.There is no need to use electrode preservation solution, portable and suitable for outdoor use without power supply. Acid-base test electrode/pH electrode/pH meter/acid-base test/pH test/pH measurement/pH calibration solution
+        <meta property="og:description" content="
 " />
         <meta property="og:image" content="https://ultraehp.com/images/Ultra Video/UH1/中文版/YouTube-UH1-中文.jpg" />
 
@@ -125,8 +126,8 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                         <p className='w-full'>Achieve your first draft in the first minute. Sit back and watch AI magically turn your Sitemap into wireframes in one click generating real components un-styled with copy. Getting sign off has never been so easy.
                             
                         </p>
-                        <div className='grid mt-4  grid-cols-2'>
-                            <div className='border  p-[15px] border-black'>
+                        <div className='grid mt-4 p-8 grid-cols-1 md:grid-cols-2'>
+                            <div className=' m-[30px]  p-[15px] border-black rounded-xl border-2 '>
                                 <div className="txt">
                                     <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
 
@@ -135,7 +136,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                                     <p className='text-[12px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime alias officia sunt, ipsam unde</p>
                                 </div>
                             </div>
-                          <div className='border  p-[15px] border-black'>
+                          <div className='border-2 rounded-xl  p-[15px] border-black'>
                                 <div className="txt">
                                     <div className="img border-2 border-black rounded-full my-[10px] w-[40px] h-[40px]">
 
@@ -222,26 +223,11 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
           <div className="txt  absolute left-[6%] bottom-[90px] z-[999999]" data-aos-duration='500' data-aos="zoom-in-up"data-aos-delay='700'>
                <p className='text-[16px] mx-auto text-white text-center w-[60%]'>Deep inside our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of food. de our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of </p>
 
-               <a href="" className='mt-7 border-2 bprder-white inline-block text-[14px] ml-[40%] font-bold text-black bg-white rounded-[30px] text-center w-[200px] p-3'>BUY NOW</a>
+               <Link href="/Blog" className='mt-7 border-2 bprder-white inline-block text-[14px] ml-[40%] font-bold text-black bg-white rounded-[30px] text-center w-[200px] p-3'>BUY NOW</Link>
          </div>
       </section>
 
-      <section className='w-full py-[100px]'>
-         <div className="left w-2/3">
-         <div class="bg-gray-300 bg-opacity-50 backdrop-blur-lg p-8">
-            <img className='w-full' src="https://image.dive-hiroshima.com/wp-content/uploads/2022/06/オーナー.jpg" alt="" />
-  <h1 class="text-4xl font-bold text-center text-gray-800">毛玻璃背景效果</h1>
-  <p class="text-lg text-gray-700 mt-4">
-    這是一個使用 Tailwind CSS 實現的毛玻璃背景效果的範例。
-  </p>
-</div>
-
-            
-         </div>
-          <div className="right w-1/3">
-            
-          </div>
-      </section>
+   
 
          
 </div>

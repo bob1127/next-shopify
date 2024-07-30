@@ -7,7 +7,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -37,7 +37,7 @@ export default () => {
     // }, []);
 
     return (
-        <div className='w-[1300px]  m-0 p-0'>
+        <div className=' w-full md:w-[500px] lg:w-[600px] xl:w-[1300px]  m-0 p-0'>
            
             <Swiper
             data-aos="zoom-in-up" data-aos-duration="750" data-aos-delay="450"
@@ -49,7 +49,10 @@ export default () => {
   
   breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
+                    },
+                       500: {
+                        slidesPerView: 3,
                     },
                     768: {
                         slidesPerView: 3,
@@ -107,7 +110,7 @@ export default () => {
                                     <div className="description bg-[#ef4023] p-5">
                                         <b className='text-black'>Price: $250</b>
                                         <p className='text-[12px] mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, illum?</p>
-                                        <a href="" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</a>
+                                        <Link href="/BlogInner" className='border border-black text-black p-2 text-[12px] font-bold rounded-[30px] w-[190px]'>BUY NOW</Link>
                                     </div>
                                 </CardBody>
                             </Card>
