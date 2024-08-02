@@ -3,6 +3,13 @@ import PostContent from './PostContent';
 import { getPostBySlug, getPosts } from '../../../lib/api';
 import { notFound } from 'next/navigation';
 
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default async function Post({ params }) {
   console.log('Slug:', params.slug); // 添加日誌
   const post = await getPostBySlug(params.slug);
@@ -11,12 +18,9 @@ export default async function Post({ params }) {
     return notFound();
   }
 
-  return <PostContent post={post} />;
-}
-
-export async function generateStaticParams() {
-  const posts = await getPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return (
+    <div>
+      <PostContent post={post} />
+    </div>
+  );
 }

@@ -1,8 +1,8 @@
 // app/blog/[slug]/PostContent.js
 "use client";
 
-import { divider } from '@nextui-org/react';
 import React from 'react';
+import { divider } from '@nextui-org/react';
 
 function PostContent({ post }) {
   return (
