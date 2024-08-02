@@ -8,9 +8,9 @@
 .header .menu {
   width: 480px;
   height: 650px;
-  background-color: #2b72e5;
+  background-color: #f3f4f7;
   border-radius: 25px;
-  border: solid 3px black;
+  border: solid 1px black;
   position: relative;
 }
 

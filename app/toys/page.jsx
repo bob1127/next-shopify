@@ -469,8 +469,10 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                 </div>
                 <h1 className="text-[50px] text-center mt-[200px]">
                   The toys for Childs
+                  
 
                 </h1>
+                 <span className="text-[12px] text-center mx-auto font-normal text-gray-900">(可經由蝦皮管道購買)</span>
                 <DragCarousel/>
 
                 

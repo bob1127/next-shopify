@@ -36,12 +36,12 @@ export default function Footer() {
              </b>
         </div>
          <div className="link-button-wrap flex flex-wrap  ">
-            <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play </a>
-             <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music</a>
-               <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local</a>
-                 <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel</a>
-                   <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play</a>
-                     <a href="" className='w-auto px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play </a>
+            <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play </a>
+             <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music</a>
+               <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local</a>
+                 <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel</a>
+                   <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play</a>
+                     <a href="" className='w-auto m-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play </a>
          </div>
          <div className="input">
            <from>
@@ -49,24 +49,24 @@ export default function Footer() {
            </from>
          </div>
          <div className="keywords mt-[20px]">
-            <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
-             <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
-               <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
-                 <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
-                   <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
-                     <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
-            <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
-             <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
-               <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
-                 <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
-                   <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
-                     <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
-               <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
-             <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
-               <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
-                 <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
-                   <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
-                     <a href="" className='w-auto mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+            <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+             <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
+               <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
+                 <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
+                   <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
+                     <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+            <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+             <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
+               <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
+                 <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
+                   <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
+                     <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+               <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
+             <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Music 🎧</a>
+               <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Local 🏙</a>
+                 <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>Travel 👕</a>
+                   <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play 🍽</a>
+                     <a href="" className='w-auto m-2 mt-2 px-3 inline-blockblock mr-[15px] hover:bg-black bg-white hover:text-white duration-100 py-[2px] border-1  border-black rounded-[30px] text-black'>play ⚽</a>
          </div>
         
       </div>

@@ -1,4 +1,4 @@
-
+k
 "use client"
 import Hero from '@/components/hero'
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem,Button } from "@nextui-org/react";

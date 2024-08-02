@@ -223,7 +223,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
           <div className="txt  absolute left-[6%] bottom-[90px] z-[999999]" data-aos-duration='500' data-aos="zoom-in-up"data-aos-delay='700'>
                <p className='text-[16px] mx-auto text-white text-center w-[60%]'>Deep inside our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of food. de our wonderful world of vertical farms, freshness runs free, bland gets banished, and smart produce secures the future of </p>
 
-               <Link href="/Blog" className='mt-7 border-2 bprder-white inline-block text-[14px] ml-[40%] font-bold text-black bg-white rounded-[30px] text-center w-[200px] p-3'>BUY NOW</Link>
+               <Link href="/products" className='mt-7 border-2 bprder-white inline-block text-[14px] ml-[40%] font-bold text-black bg-white rounded-[30px] text-center w-[200px] p-3'>BUY NOW</Link>
          </div>
       </section>
 

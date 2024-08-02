@@ -122,7 +122,7 @@ export const HoverImageLinks = () => {
      
         ></Link>
         <Link
-          heading="兒童服飾-Boy"
+          heading="時尚服裝"
           subheading="We work with great people"
           imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240712_new_women.jpg"
           href="#"
