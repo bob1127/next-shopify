@@ -103,7 +103,7 @@ const SlideTabs = () => {
       <Tab setPosition={setPosition}><b className="font-extrabold ">服飾</b> Clothes</Tab></Link>
 
       <Link href="/toys" className="cursor-pointer">
-      <Tab setPosition={setPosition}><b className="font-extrabold cursor-pointer" >       玩具 </b> Toys </Tab></Link>
+      <Tab setPosition={setPosition}><b className="font-extrabold cursor-pointer" >       玩具 </b> Toy </Tab></Link>
 
         <Link href="/WordpressBlog" className="cursor-pointer">
       <Tab setPosition={setPosition}><b className="font-extrabold ">文章</b> Blog</Tab></Link>
