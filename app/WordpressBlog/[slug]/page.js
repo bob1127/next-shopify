@@ -1,10 +1,5 @@
-
-
-
-
-"use client"
 // app/blog/[slug]/page.js
-import { divider } from '@nextui-org/react';
+import PostContent from './PostContent';
 import { getPostBySlug, getPosts } from '../../../lib/api';
 import { notFound } from 'next/navigation';
 
@@ -16,14 +11,7 @@ export default async function Post({ params }) {
     return notFound();
   }
 
-  return (
-         <div className='p-[200px]'>
-             <div className='border border-black'>
-      <h1 className='text-[22px] font-bold'>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </div>
-         </div>
-  );
+  return <PostContent post={post} />;
 }
 
 export async function generateStaticParams() {

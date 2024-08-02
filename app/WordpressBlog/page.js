@@ -15,6 +15,14 @@ export default async function Blog() {
         {post.title}
             </Link>
           </li>
+          
+
+        //   <h4>{post.title}</h4>
+
+
+
+
+
         ))}
       </ul>
     </div>
