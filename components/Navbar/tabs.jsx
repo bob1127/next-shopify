@@ -105,7 +105,7 @@ const SlideTabs = () => {
       <Link href="/toys" className="cursor-pointer">
       <Tab setPosition={setPosition}><b className="font-extrabold cursor-pointer" >       玩具 </b> Toys </Tab></Link>
 
-        <Link href="https://wordpress-vercel-coral.vercel.app" className="cursor-pointer">
+        <Link href="/WordpressBlog" className="cursor-pointer">
       <Tab setPosition={setPosition}><b className="font-extrabold ">文章</b> Blog</Tab></Link>
 
       {/* Render the cursor with its position animated */}
