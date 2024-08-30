@@ -7,8 +7,7 @@ import SwiperCarousel from '../../components/SwiperCarouselFood/index.jsx'
 const backgroundImage = 'https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200';
 import ShiftDrop from '../../components/ShiftingDropDown/index.jsx'
 import SwiperCarouselFood from '../../components/SwiperCarouselFood/index.jsx'
-
-    
+// import CarouselSlider from '../../components/Carousel/Carousel.tsx'
 
 const myLoader = ({ src, width, quality, placeholder }) => {
     return `https://cdn.prod.website-files.com/6177739448baa66404ce1d9c/${src}?w=${width}?p=${placeholder}`
@@ -110,6 +109,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
 
 
 <SwiperCarousel/>
+{/* <CarouselSlider/> */}
       <section className='h-full  bg-white border-3 border-gray-200 rounded-2xl m-7 py-[80px]'>
         <div className="txt border border-gray-400">
             {/* <h1 className='w-2/3 text-[35px] font-bold'>Website Design and Built Fast With AI</h1> */}

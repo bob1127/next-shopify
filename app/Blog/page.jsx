@@ -3,6 +3,7 @@
 import styles from './styles.module.css'
 import Image from 'next/image';
 import Link from 'next/link';
+import Track from '../../components/Trackeye/page.jsx'
 import ReactSlick from '../../components/ReactSlick/ImageSlider.jsx'
 
 const backgroundImage = 'https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200';
@@ -97,11 +98,14 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             {/* JSON-LD for Blog Post */}
 
             {/* 結構化資料 UH1 */}
+
+
+            <Track/>
             <section >
                 <div className='py-[10px] flex flex-col lg:flex-row '>
-                     <div className="title w-full lg:w-1/2  p-[50px] mt-[100px]">
+                     <div className="title w-full lg:w-1/2  pt-[40px] px-[15px] lg:p-[50px] mt-[100px]">
                     <b> <span className='text-[30px] font-bold text-[#6fcfeb]'>BE</span>  <span className='text-[30px] font-bold text-[#eb5c01]'>FES!!</span>  <span className='text-[30px] font-bold text-[#6fcfeb]'>TOKYO</span> </b>
-                    <h4 className=' font-bold text-[62px]'>GO TO!! SHOP LIST</h4>
+                    <h4 className=' font-bold  text-[40px] leading-normal lg:text-[62px]'>GO TO!! SHOP LIST</h4>
                     <p className='text-[16px]'>東京のあの店をお得に楽しめる!?
 
 </p>
@@ -110,7 +114,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                  <div className="bottom-wrap flex  flex-col justify-center items-center mt-[65px] p-[50px] w-full lg:w-1/2">
                   <div className=''>
                       <b className='font-bold text-left'>各都市で展開されるオリジナルコンテンツにも注目!!</b>
-                    <p className='font-normal  w-2/3 text-[12px] text-gray-800'>フェスが行われる各会場内や周辺施設、周辺エリアのビームスなどで、都市ごとに趣向をこらしたオリジナルのイベントコンテンツを展開します!! 各都市共通で行われる大抽選会もお楽しみに!!
+                    <p className='font-normal  w-full lg:w-2/3 text-[12px] text-gray-800'>フェスが行われる各会場内や周辺施設、周辺エリアのビームスなどで、都市ごとに趣向をこらしたオリジナルのイベントコンテンツを展開します!! 各都市共通で行われる大抽選会もお楽しみに!!
 ※全イベントは新型コロナウイルス感染症の感染拡大の状況により、予告なく内容を変更・中止とさせていただく場合がございます。</p>
                   </div>
                  </div>
@@ -126,7 +130,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
                                 <b className='ml-[15px] text-[20px] font-bold'>Baccaiun</b>
                                 
                             </div>
-                            <div className="content flex overflow-hidden w-[600px] ">
+                            <div className="content w-[440px] flex overflow-hidden xl:w-[600px] ">
                                 <div className="left w-1/2">
                                     <ReactSlick/>
                                 </div>

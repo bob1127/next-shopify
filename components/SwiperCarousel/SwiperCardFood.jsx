@@ -36,7 +36,7 @@ export default () => {
 
     return (
         <div className='flex flex-col justify-center items-center'>
-        <div className='w-[1300px] relative  m-0 p-0'>
+        <div className='w-[470px] md:w-[600px] xl:w-[1300px] lg:w-[800px] relative  m-0 p-0'>
             {/* <div className='modal01 inline w-[400px]  absolute z-[9999999] top-0 right-[170px]'>
                 <div className="close absolute right-2 top-3 border-2 border-black bg-black z-[9999999] rounded-full w-[40px] h-[40px] border-green">
                     

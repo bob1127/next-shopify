@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { MouseEvent as ReactMouseEvent, useRef, useState } from "react"
-import Link from "next/link"
-import { motion, useMotionValue, useSpring, type PanInfo } from "framer-motion"
-import { MoveLeft, MoveRight } from "lucide-react"
+import { MouseEvent as ReactMouseEvent, useRef, useState } from "react";
+import Link from "next/link";
+import { motion, useMotionValue, useSpring, type PanInfo } from "framer-motion";
+import { MoveLeft, MoveRight } from "lucide-react";
 
-import { cn } from "../../lib/utils.js"
+import { cn } from "../../lib/utils.js";
 
-const START_INDEX = 1
-const DRAG_THRESHOLD = 150
-const FALLBACK_WIDTH = 509
+const START_INDEX = 1;
+const DRAG_THRESHOLD = 150;
+const FALLBACK_WIDTH = 509;
 
-const CURSOR_SIZE = 80
+const CURSOR_SIZE = 80;
 
 const articles = [
   {
@@ -28,33 +28,33 @@ const articles = [
     title: "Handling Forms in NextJS with busboy, ReactHookForm and TypeScript",
     url: "https://www.nikoand.jp/wp-content/uploads/2024/02/bnr_nk_10th_800_452-1.jpg",
   },
-]
+];
 
 export default function SuggestedCarousel() {
-  const containerRef = useRef<HTMLUListElement>(null)
-  const itemsRef = useRef<(HTMLLIElement | null)[]>([])
-  const [activeSlide, setActiveSlide] = useState(START_INDEX)
-  const canScrollPrev = activeSlide > 0
-  const canScrollNext = activeSlide < articles.length - 1
-  const offsetX = useMotionValue(0)
+  const containerRef = useRef<HTMLUListElement>(null);
+  const itemsRef = useRef<(HTMLLIElement | null)[]>([]);
+  const [activeSlide, setActiveSlide] = useState(START_INDEX);
+  const canScrollPrev = activeSlide > 0;
+  const canScrollNext = activeSlide < articles.length - 1;
+  const offsetX = useMotionValue(0);
   const animatedX = useSpring(offsetX, {
     damping: 20,
     stiffness: 150,
-  })
+  });
 
-  const [isDragging, setIsDragging] = useState(false)
+  const [isDragging, setIsDragging] = useState(false);
   function handleDragSnap(
     _: MouseEvent,
-    { offset: { x: dragOffset } }: PanInfo,
+    { offset: { x: dragOffset } }: PanInfo
   ) {
     //reset drag state
-    setIsDragging(false)
-    containerRef.current?.removeAttribute("data-dragging")
+    setIsDragging(false);
+    containerRef.current?.removeAttribute("data-dragging");
 
     //stop drag animation (rest velocity)
-    animatedX.stop()
+    animatedX.stop();
 
-    const currentOffset = offsetX.get()
+    const currentOffset = offsetX.get();
 
     //snap back if not dragged far enough or if at the start/end of the list
     if (
@@ -62,11 +62,11 @@ export default function SuggestedCarousel() {
       (!canScrollPrev && dragOffset > 0) ||
       (!canScrollNext && dragOffset < 0)
     ) {
-      animatedX.set(currentOffset)
-      return
+      animatedX.set(currentOffset);
+      return;
     }
 
-    let offsetWidth = 0
+    let offsetWidth = 0;
     /*
       - start searching from currently active slide in the direction of the drag
       - check if the drag offset is greater than the width of the current item
@@ -78,14 +78,14 @@ export default function SuggestedCarousel() {
       dragOffset > 0 ? i >= 0 : i < itemsRef.current.length;
       dragOffset > 0 ? i-- : i++
     ) {
-      const item = itemsRef.current[i]
-      if (item === null) continue
-      const itemOffset = item.offsetWidth
+      const item = itemsRef.current[i];
+      if (item === null) continue;
+      const itemOffset = item.offsetWidth;
 
       const prevItemWidth =
-        itemsRef.current[i - 1]?.offsetWidth ?? FALLBACK_WIDTH
+        itemsRef.current[i - 1]?.offsetWidth ?? FALLBACK_WIDTH;
       const nextItemWidth =
-        itemsRef.current[i + 1]?.offsetWidth ?? FALLBACK_WIDTH
+        itemsRef.current[i + 1]?.offsetWidth ?? FALLBACK_WIDTH;
 
       if (
         (dragOffset > 0 && //dragging left
@@ -97,94 +97,94 @@ export default function SuggestedCarousel() {
       ) {
         dragOffset > 0
           ? (offsetWidth += prevItemWidth)
-          : (offsetWidth -= nextItemWidth)
-        continue
+          : (offsetWidth -= nextItemWidth);
+        continue;
       }
 
       if (dragOffset > 0) {
         //prev
-        offsetX.set(currentOffset + offsetWidth + prevItemWidth)
-        setActiveSlide(i - 1)
+        offsetX.set(currentOffset + offsetWidth + prevItemWidth);
+        setActiveSlide(i - 1);
       } else {
         //next
-        offsetX.set(currentOffset + offsetWidth - nextItemWidth)
-        setActiveSlide(i + 1)
+        offsetX.set(currentOffset + offsetWidth - nextItemWidth);
+        setActiveSlide(i + 1);
       }
-      break
+      break;
     }
   }
 
   function scrollPrev() {
     //prevent scrolling past first item
-    if (!canScrollPrev) return
+    if (!canScrollPrev) return;
 
     const nextWidth = itemsRef.current
       .at(activeSlide - 1)
-      ?.getBoundingClientRect().width
-    if (nextWidth === undefined) return
-    offsetX.set(offsetX.get() + nextWidth)
+      ?.getBoundingClientRect().width;
+    if (nextWidth === undefined) return;
+    offsetX.set(offsetX.get() + nextWidth);
 
-    setActiveSlide((prev) => prev - 1)
+    setActiveSlide((prev) => prev - 1);
   }
   function scrollNext() {
     // prevent scrolling past last item
-    if (!canScrollNext) return
+    if (!canScrollNext) return;
 
     const nextWidth = itemsRef.current
       .at(activeSlide + 1)
-      ?.getBoundingClientRect().width
-    if (nextWidth === undefined) return
-    offsetX.set(offsetX.get() - nextWidth)
+      ?.getBoundingClientRect().width;
+    if (nextWidth === undefined) return;
+    offsetX.set(offsetX.get() - nextWidth);
 
-    setActiveSlide((prev) => prev + 1)
+    setActiveSlide((prev) => prev + 1);
   }
 
   const [hoverType, setHoverType] = useState<"prev" | "next" | "click" | null>(
-    null,
-  )
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
+    null
+  );
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
   const animatedHoverX = useSpring(mouseX, {
     damping: 20,
     stiffness: 400,
     mass: 0.1,
-  })
+  });
   const animatedHoverY = useSpring(mouseY, {
     damping: 20,
     stiffness: 400,
     mass: 0.1,
-  })
+  });
 
   function navButtonHover({
     currentTarget,
     clientX,
     clientY,
   }: ReactMouseEvent<HTMLButtonElement, MouseEvent>) {
-    const parent = currentTarget.offsetParent
-    if (!parent) return
-    const { left: parentLeft, top: parentTop } = parent.getBoundingClientRect()
+    const parent = currentTarget.offsetParent;
+    if (!parent) return;
+    const { left: parentLeft, top: parentTop } = parent.getBoundingClientRect();
 
-    const { left, top, width, height } = currentTarget.getBoundingClientRect()
-    const centerX = left + width / 2
-    const centerY = top + height / 2
+    const { left, top, width, height } = currentTarget.getBoundingClientRect();
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
 
-    const offsetFromCenterX = clientX - centerX
-    const offsetFromCenterY = clientY - centerY
+    const offsetFromCenterX = clientX - centerX;
+    const offsetFromCenterY = clientY - centerY;
 
-    mouseX.set(left - parentLeft + offsetFromCenterX / 4)
-    mouseY.set(top - parentTop + offsetFromCenterY / 4)
+    mouseX.set(left - parentLeft + offsetFromCenterX / 4);
+    mouseY.set(top - parentTop + offsetFromCenterY / 4);
   }
 
   function disableDragClick(e: ReactMouseEvent<HTMLAnchorElement>) {
     if (isDragging) {
-      e.preventDefault()
-      e.stopPropagation()
+      e.preventDefault();
+      e.stopPropagation();
     }
   }
 
   return (
     <>
-      <div className="text-center">
+      <div className="text-center px-[30px]">
         <div className="flex justify-center gap-4">
           <Link
             className="text-sm underline underline-offset-2 hover:text-lime-300"
@@ -203,7 +203,7 @@ export default function SuggestedCarousel() {
             to the repo
           </Link>
         </div>
-        <h1 className="mt-2 text-6xl font-bold uppercase">
+        <h1 className="my-[20px] text-[40px] lg:text-6xl font-extrabold uppercase">
           Framer Motion Carousel
         </h1>
         <p className="text-sm text-gray-400">
@@ -213,7 +213,7 @@ export default function SuggestedCarousel() {
       <div className="group container ">
         <motion.div
           className={cn(
-            "pointer-events-none absolute z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100",
+            "pointer-events-none absolute z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           )}
           style={{
             width: CURSOR_SIZE,
@@ -226,7 +226,7 @@ export default function SuggestedCarousel() {
             layout
             className={cn(
               "grid h-full place-items-center rounded-full bg-lime-300",
-              hoverType === "click" && "absolute inset-7 h-auto",
+              hoverType === "click" && "absolute inset-7 h-auto"
             )}
           >
             <motion.span
@@ -236,7 +236,7 @@ export default function SuggestedCarousel() {
                 (hoverType === "prev" || hoverType === "next") &&
                   "absolute inset-x-0 top-2",
                 hoverType === "click" &&
-                  "absolute top-full mt-0.5 w-auto text-sm font-bold text-lime-300",
+                  "absolute top-full mt-0.5 w-auto text-sm font-bold text-lime-300"
               )}
             >
               {hoverType ?? "drag"}
@@ -256,59 +256,62 @@ export default function SuggestedCarousel() {
               right: FALLBACK_WIDTH,
             }}
             onMouseMove={({ currentTarget, clientX, clientY }) => {
-              const parent = currentTarget.offsetParent
-              if (!parent) return
-              const { left, top } = parent.getBoundingClientRect()
-              mouseX.set(clientX - left - CURSOR_SIZE / 2)
-              mouseY.set(clientY - top - CURSOR_SIZE / 2)
+              const parent = currentTarget.offsetParent;
+              if (!parent) return;
+              const { left, top } = parent.getBoundingClientRect();
+              mouseX.set(clientX - left - CURSOR_SIZE / 2);
+              mouseY.set(clientY - top - CURSOR_SIZE / 2);
             }}
             onDragStart={() => {
-              containerRef.current?.setAttribute("data-dragging", "true")
-              setIsDragging(true)
+              containerRef.current?.setAttribute("data-dragging", "true");
+              setIsDragging(true);
             }}
             onDragEnd={handleDragSnap}
           >
             {articles.map((article, index) => {
-  const active = index === activeSlide;
-  return (
-    <motion.li
-      layout
-      key={article.title}
-      ref={(el) => (itemsRef.current[index] = el)}
-      className={cn(
-        "group relative shrink-0 select-none px-3 transition-opacity duration-300",
-        !active && "opacity-30"
-      )}
-      transition={{
-        ease: "easeInOut",
-        duration: 0.4
-      }}
-      style={{
-        flexBasis: active ? "40%" : "30%"
-      }}
-    >
-      <Link
-        href={article.url}
-        className="block"
-        target="_blank"
-        rel="noopener noreferrer"
-        draggable={false}
-        onClick={disableDragClick}
-      >
-        <img src={article.url} alt={article.title} className="w-full" />
-      </Link>
-      <div
-        className={cn(
-          "mt-4 flex justify-center",
-          !active && "hidden"
-        )}
-      >
-        {/* Additional content or links can go here */}
-      </div>
-    </motion.li>
-  );
-})}
-
+              const active = index === activeSlide;
+              return (
+                <motion.li
+                  layout
+                  key={article.title}
+                  ref={(el) => (itemsRef.current[index] = el)}
+                  className={cn(
+                    "group relative shrink-0 select-none px-3 transition-opacity duration-300",
+                    !active && "opacity-30"
+                  )}
+                  transition={{
+                    ease: "easeInOut",
+                    duration: 0.4,
+                  }}
+                  style={{
+                    flexBasis: active ? "40%" : "30%",
+                  }}
+                >
+                  <Link
+                    href={article.url}
+                    className="block"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    draggable={false}
+                    onClick={disableDragClick}
+                  >
+                    <img
+                      src={article.url}
+                      alt={article.title}
+                      className="w-full"
+                    />
+                  </Link>
+                  <div
+                    className={cn(
+                      "mt-4 flex justify-center",
+                      !active && "hidden"
+                    )}
+                  >
+                    {/* Additional content or links can go here */}
+                  </div>
+                </motion.li>
+              );
+            })}
           </motion.ul>
           <button
             type="button"
@@ -345,5 +348,5 @@ export default function SuggestedCarousel() {
         </div>
       </div>
     </>
-  )
+  );
 }

@@ -467,12 +467,12 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
     </div> <span class="yajirushi">
 </span></a>
                 </div>
-                <h1 className="text-[50px] text-center mt-[200px]">
+                <h1 className="text-[22px] lg:text-[50px] text-center mt-[200px]">
                   The toys for Childs
                   
 
                 </h1>
-                 <span className="text-[12px] text-center mx-auto font-normal text-gray-900">(可經由蝦皮管道購買)</span>
+               
                 <DragCarousel/>
 
                 
@@ -504,7 +504,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             </h2>
           </h1>
         </div>
-        <div className="bottom_txt mx-auto w-[700px]">
+        <div className="bottom_txt mx-auto w-full lg:w-[700px]">
           <p className="text-gray-300 mt-3 mb-[40px] mx-auto text-[12px] w-2/3 text-center  font-normal ">
             Note:在限時特價中，賣家有權保留一切更改規則的措辭通常是指賣家在進行限時特價活動時保留調整或修改活動條件的權利
           </p>
@@ -527,7 +527,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             <h4 className="text-[32px] font-semibold">Premium Speakers</h4>
             <h5>Bring Quality Sound into Your Home</h5>
         </div>
-        <div className="bottom-wrap flex flex-col lg:flex-row p-8">
+        <div className="bottom-wrap flex flex-col lg:flex-row p-[15px] lg:p-8">
             <div className="left w-full lg:w-[62%] pb-5 lg:pb-0  pr-0 lg:pr-6">
                 <Image src='scene_02_kv.jpg' width={1000} height={420}   data-aos="fade-right" data-aos-delay="450" placeholder="empty" className="rounded-xl" loading="lazy" loader={myLoader}></Image>
             </div>
@@ -581,7 +581,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
             
      
         </section> 
-        <section className="h-[130vh]">
+        <section className="h-[100vh] xl:h-[130vh]">
        <div className="flex w-full justify-center items-center flex-col">
       <Tabs aria-label="Options" className="bg-transparent">
     <Tab key="photos" className="h-[100px] bg-transparent" title={<TabMenu />}>

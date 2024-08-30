@@ -37,7 +37,7 @@ export default () => {
     // }, []);
 
     return (
-        <div className=' w-full md:w-[500px] lg:w-[600px] xl:w-[1300px]  m-0 p-0'>
+        <div className=' w-[400px] md:w-[550px] lg:w-[600px] xl:w-[1300px]  m-0 p-0'>
            
             <Swiper
             data-aos="zoom-in-up" data-aos-duration="750" data-aos-delay="450"

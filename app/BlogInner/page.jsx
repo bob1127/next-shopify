@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { StickyContainer, Sticky } from 'react-sticky';
 import ReactSlick from '../../components/ReactSlick/ImageSlider3.jsx'
 
-
 import Marquee from 'react-fast-marquee'
 
 

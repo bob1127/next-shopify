@@ -64,41 +64,9 @@ function Carousel({ images}) {
             </div>
            
             <div className="carousel_wrapper  ">
-              
                 
-                {images.map((image, index) => {
-                    return (
-
-                        <a href={image.url} className="">
-                            <div
-                                key={index}
-                                className={
-                                    index == current
-                                        ? "carousel_card carousel_card-active"
-                                        : "carousel_card"
-                                }
-                            >
-                                {/* <div className="card-text-wrap flex justify-center flex-col align-middle">
-                                <h3>LOREM</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolores nihil tempora totam? Rerum et quaerat aspernatur provident officia sint quidem quibusdam ab cumque fuga, corporis ducimus veniam quam maxime adipisci ipsam ipsa non sed explicabo numquam, blanditiis quas ad!</p>
-                            </div> */}
-
-
-                            
-
-                                <Image loader={myLoader01} placeholder="empty" loading="lazy" alt={image.alt} src={image.image} width={1820} height={700} className="HeroImg" />
-
-
-                                <div className="card_overlay absolute z-[99] b-[15%] l-[40%]">
-                                    <h2 className="card_title">{image.title}</h2>
-
-
-
-
-                                </div>
-                            </div></a>
-                    );
-                })}
+              
+              
                 <div className="carousel_arrow_left" onClick={slideLeft}>
                     &lsaquo;
                 </div>
@@ -106,19 +74,8 @@ function Carousel({ images}) {
                     &rsaquo;
                 </div>
                 <div className="carousel_pagination">
-                    {images.map((_, index) => {
-                        return (
-                            <div
-                                key={index}
-                                className={
-                                    index == current
-                                        ? "pagination_dot pagination_dot-active"
-                                        : "pagination_dot"
-                                }
-                                onClick={() => setCurrent(index)}
-                            ></div>
-                        );
-                    })}
+                    
+                  
                 </div>
             </div>
         </div>

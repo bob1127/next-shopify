@@ -53,8 +53,8 @@ export default function Index({ projects, reversed }) {
     }
 
     return (
-        <div onMouseMove={(e) => { manageMouseMove(e) }} className="p-[40px] flex flex-col md:flex-row border-2 w-full border-red">
-            <div className="txt w-full  md:w-[50%] p-8">
+        <div onMouseMove={(e) => { manageMouseMove(e) }} className="p-[15px] lg:p-[40px] flex flex-col md:flex-row border-2 w-full border-red">
+            <div className="txt w-full  md:w-[50%] p-[15px]  lg:p-8">
               <div className='border-2 border-green-400'>
                   <h1 className='text-black text-[40px]'>Which One Do You Like </h1>
                   <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque alias voluptates aliquam vitae officia fuga repudiandae fugit explicabo, nobis tempora ratione nulla maiores fugiat sit illum nihil iste temporibus.</p>
