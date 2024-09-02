@@ -1,6 +1,25 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+:root{
+  /* 購買按鈕 */
+  --color-buy-dark:#2c81db;
+    /* 卡片 */
+    --color-card-1:#ef4023;
+      --color-card-2:#2382ef;
+}
+/* 按鈕 */
+.bg-buy-dark{
+  background-color: var(--color-buy-dark);
+}
+/* 卡片 */
+.bg-card-1{
+   background-color: var(--color-card-1);
+}
+.bg-card-2{
+   background-color: var(--color-card-2);
+}
 /* Additional styles */
 /* @import './additional-styles/range-slider.css';
 @import './additional-styles/theme.css';
@@ -216,6 +235,7 @@ section.section_article p{
   transform: scale(1.02);
 
 }
+
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
     content: "←" !important;
   color: black !important;
@@ -225,7 +245,7 @@ section.section_article p{
 }
 .swiper-button-prev:hover:after,.swiper-button-next:hover:after{
     color: white !important;
-    background-color: rgb(106,181,204);
+    background-color: rgb(43, 43, 43);
     border-radius: 100%;
     width: 40px;
     padding: 5px;
@@ -595,3 +615,201 @@ iframe .cover{
 }
 
  */
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+#slide-1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spacer {
+  height: 500vh;
+}
+
+.slider-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 50vh;
+  border: 1px solid #04bcff;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.slide-number {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 0.25em;
+}
+
+.postfix span {
+  padding: 0 0.25em;
+}
+
+.slide-name {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  font-size: 32px !important;
+  transform: translate(-50%, -50%);
+}
+
+.slide-year {
+  position: absolute;
+  top: 65%;
+  left: 32%;
+  font-size: 28px !important;
+  transform: translate(-50%, -50%);
+}
+
+.slide-number,
+.slide-name,
+.slide-year {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  clip-path: polygon(0 0, 100% 0, 100% 30px, 0 30px);
+  text-transform: uppercase;
+}
+
+.prefix,
+.names,
+.years {
+  position: relative;
+  top: 0;
+}
+
+@media (max-width: 900px) {
+  .slide-name {
+    left: 50%;
+  }
+
+  .slide-year {
+    right: 10%;
+  }
+}
+
+.progress-container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 8px;
+  width: 14rem;
+  height: 0.23rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 0%;
+  /* 初始寬度為0，通過動畫逐漸增長 */
+}
+
+
+/* 第二個 embla-carousel */
+.embla {
+  max-width: 48rem;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__number {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--slide-height);
+  user-select: none;
+}
+.embla-thumbs {
+  --thumbs-slide-spacing: 0.8rem;
+  --thumbs-slide-height: 6rem;
+  margin-top: var(--thumbs-slide-spacing);
+}
+.embla-thumbs__viewport {
+  overflow: hidden;
+}
+.embla-thumbs__container {
+  display: flex;
+  flex-direction: row;
+  margin-left: calc(var(--thumbs-slide-spacing) * -1);
+}
+.embla-thumbs__slide {
+  flex: 0 0 22%;
+  min-width: 0;
+  padding-left: var(--thumbs-slide-spacing);
+}
+@media (min-width: 576px) {
+  .embla-thumbs__slide {
+    flex: 0 0 15%;
+  }
+}
+.embla-thumbs__slide__number {
+  border-radius: 1.8rem;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--detail-high-contrast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--thumbs-slide-height);
+  width: 100%;
+}
+.embla-thumbs__slide--selected .embla-thumbs__slide__number {
+  color: var(--text-body);
+}

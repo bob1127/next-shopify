@@ -14,9 +14,18 @@ module.exports = {
   
     
     extend: {
+       clipPath: {
+        'slide': 'polygon(0 100%, 100% 100%, 100% 100%, 0 100%)',
+        'slide-1': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+        'text-clip': 'polygon(0 0, 100% 0, 100% 30px, 0 30px)',
+      },
+      height: {
+        '500vh': '500vh',
+      },
       animation: {
       marquee: 'marquee 25s linear infinite',
       marquee2: 'marquee2 25s linear infinite',
+    
     },
     keyframes: {
       marquee: {
@@ -29,6 +38,7 @@ module.exports = {
       },
     },
       colors: {
+        
         't-color-1': '#bfbfbf',
         't-color-2': '#d9d9d9',
         't-color-3': '#FDF3C6',

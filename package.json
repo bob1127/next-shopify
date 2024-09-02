@@ -34,6 +34,7 @@
     "cloudinary": "^1.41.3",
     "cloudinary-react": "^1.8.1",
     "cloudinary-video-player": "^1.10.2",
+    "embla-carousel-react": "^8.2.0",
     "framer": "^2.4.1",
     "framer-motion": "^10.18.0",
     "graphql": "^16.9.0",
