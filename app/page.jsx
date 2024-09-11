@@ -42,7 +42,8 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import ModalBtn from "../components/ModalBtn-6.jsx";
-import Carousel from "../components/Carousel";
+import Carousel from "../components/EmblaCarousel06/index";
+
 import SlickCard from "../components/SlickCarousel/SlickCarousel.jsx";
 // import DragImg from '../components/DragImg/index.jsx'
 // import Features from '@/components/features'
@@ -52,7 +53,7 @@ import SlickCard from "../components/SlickCarousel/SlickCarousel.jsx";
 
 // import Testimonials from '@/components/testimonials'
 // import Newsletter from '@/components/newsletter'
-import ApplicateCard from "../components/Application/ApplicateCard";
+// import ApplicateCard from "../components/Application/ApplicateCard";
 // import CardHover from '../components/CardHover'
 // import Cards from '../components/Cards/Cards.js'
 // import { properties } from "../constants/data";
@@ -432,9 +433,9 @@ export default async function Home() {
             mainEntityOfPage: ProductPost.mainEntityOfPage,
           }}
         />
-        <section className="mt-[100px] section-heroslider">
+        {/* <section className="mt-[100px] section-heroslider">
           <HeroSlider />
-        </section>
+        </section> */}
         <div className=" my-[150px]">
           {/* <Hero /> */}
 
@@ -636,10 +637,10 @@ export default async function Home() {
             </div>
             <div className="right w-[30%]"></div>
           </section>
-          <section className="section_FooterScroll mt-[200px]">
+          {/* <section className="section_FooterScroll mt-[200px]">
             <FooterScroll />
-          </section>
-          <ApplicateCard />
+          </section> */}
+          {/* <ApplicateCard /> */}
 
           <div className="w-full  flex-col  md:flex-row flex justify-center items-center border  bg-white border-black">
             <div className="left w-full md:w-1/2 border border-green">
@@ -791,6 +792,20 @@ export default async function Home() {
 
           {/* <Cards/> */}
         </div>
+        <section className="section-others flex-col flex justify-center items-center">
+          <div className="title w-[70%] flex flex-col justify-center items-center">
+            <h3 className="text-[22px] w-2/3  text-center text-black">
+              others peoduct you may like
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              consectetur vel quod enim libero repellendus numquam, officiis
+              aperiam rem iste sunt labore nisi tempora molestiae modi
+              voluptates expedita exercitationem distinctio.
+            </p>
+          </div>
+          <Carousel />
+        </section>
 
         {/* 
         <section className="section_features">

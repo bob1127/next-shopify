@@ -36,9 +36,6 @@ export default () => {
     <>
       <div className=" e-full  m-0 p-0">
         <Swiper
-          data-aos="zoom-in-up"
-          data-aos-duration="750"
-          data-aos-delay="450"
           // install Swiper modules
 
           breakpoints={{

@@ -232,6 +232,141 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
         <emblaCarousel />
       </div>
     </section>
+
+    <section className="section-thumb-carousel mb-[100px] px-[60px] py-[100px] bg-[#61b0f2] relative">
+      <div className="top-wrap flex absolute py-1 w-full top-0 left-0 flex-row bg-white border border-black">
+        <div className="border border-black border-t-white border-b-white bg-white w-1/4 text-center">
+          shop
+        </div>
+        <div className="border border-black border-t-white border-b-white bg-white w-1/4 text-center">
+          store{" "}
+        </div>
+        <div className="border border-black border-t-white border-b-white bg-white w-1/4 text-center">
+          cart
+        </div>
+        <div className="border border-black border-t-white border-b-white bg-white w-1/4 text-center">
+          blog
+        </div>
+      </div>
+      <div className="thumb-carousel justify-center items-center flex flex-col xl:flex-row">
+        <div className="left w-full sm:w-[60%] xl:w-[35%]">
+          <div className="img p-5 bg-white ">
+            <img
+              className="w-full"
+              src="https://www.nikoand.jp/wp-content/uploads/2024/08/totojoy-1024x1024.png
+          "
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="right mt-5 xl:mt-0 px-5  w-full sm:w-[60%] xl:w-[65%] relative">
+          <div className="wrap01 h-full bg-white flex flex-col justify-center items-start p-[50px] w-full border-2 border-black rounded-xl">
+            <div className="title">
+              <h2 className="text-left text-[22px]">
+                WATER FRIENDLY OUTDOOR 今年は水とあそびたい！
+              </h2>
+              <p className="text-[14px]">
+                今年は「水」をテーマに、様々なアイテムをピックアップ。古くから釣り人のサンダルとして愛されている「ギョサン」をはじめ、迫力満点・種類豊富な魚クッションやアウトドアサウナグッズを展開。これからのレジャーシーズンをさらに楽しめる「編集」企画を提案いたします。
+              </p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <a
+              href=""
+              className="border w-[90px] mt-[40px] text-center inline-block border-black bg-white px-3 py-1"
+            >
+              goto
+            </a>
+            <div className="absolute right-[90px] bottom-[50px]">
+              <img
+                className="w-[140px]"
+                src="/images/ball-animation-download-in-lottie-json-gif-static-svg-file-formats--baby-toy-kids-game-handball-playing-toys-pack-animations-4334865-ezgif.com-video-to-gif-converter.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="wrap02 hidden bg-white flex flex-col justify-center items-start p-[50px] h-full w-full border-2 border-black rounded-xl">
+            <div className="title">
+              <h2 className="text-left text-[22px]">
+                WATER FRIENDLY OUTDOOR 今年は水とあそびたい！
+              </h2>
+              <p className="text-[14px]">
+                今年は「水」をテーマに、様々なアイテムをピックアップ。古くから釣り人のサンダルとして愛されている「ギョサン」をはじめ、迫力満点・種類豊富な魚クッションやアウトドアサウナグッズを展開。これからのレジャーシーズンをさらに楽しめる「編集」企画を提案いたします。
+              </p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <a
+              href=""
+              className="border w-[90px] mt-[40px] text-center inline-block border-black bg-white px-3 py-1"
+            >
+              goto
+            </a>
+            <div className="absolute right-[90px] bottom-[50px]">
+              <img
+                className="w-[140px]"
+                src="/images/ball-animation-download-in-lottie-json-gif-static-svg-file-formats--baby-toy-kids-game-handball-playing-toys-pack-animations-4334865-ezgif.com-video-to-gif-converter.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="wrap03 hidden bg-white flex flex-col justify-center items-start p-[50px] h-full w-full border-2 border-black rounded-xl">
+            <div className="title">
+              <h2 className="text-left text-[22px]">
+                WATER FRIENDLY OUTDOOR 今年は水とあそびたい！
+              </h2>
+              <p className="text-[14px]">
+                今年は「水」をテーマに、様々なアイテムをピックアップ。古くから釣り人のサンダルとして愛されている「ギョサン」をはじめ、迫力満点・種類豊富な魚クッションやアウトドアサウナグッズを展開。これからのレジャーシーズンをさらに楽しめる「編集」企画を提案いたします。
+              </p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <div className="bottom mt-4">
+              <b className="text-[14px ]">実施期間</b>
+              <p className="text-[14px]">2024年6月21日（金）～ 8月下旬予定</p>
+            </div>
+            <a
+              href=""
+              className="border w-[90px] mt-[40px] text-center inline-block border-black bg-white px-3 py-1"
+            >
+              goto
+            </a>
+            <div className="absolute right-[90px] bottom-[50px]">
+              <img
+                className="w-[140px]"
+                src="/images/ball-animation-download-in-lottie-json-gif-static-svg-file-formats--baby-toy-kids-game-handball-playing-toys-pack-animations-4334865-ezgif.com-video-to-gif-converter.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="thumb absolute right-[40px] bottom-[-40px] flex flex-row ">
+            <div className="w-[60px] border border-black h-[60px] mx-1 p-1 bg-white">
+              <img src="" alt="" />
+            </div>
+            <div className="w-[60px] border border-black h-[60px] mx-1 p-1 bg-white">
+              <img src="" alt="" />
+            </div>
+            <div className="w-[60px] border border-black h-[60px] mx-1 p-1 bg-white">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 );
 

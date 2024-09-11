@@ -6,7 +6,7 @@ import Link from "next/link";
 import SwiperCarousel from "../../components/SwiperCarouselFood/index.jsx";
 const backgroundImage =
   "https://concept-theme-tech.myshopify.com/cdn/shop/files/home-countdown.webp?v=1708878029&width=2200";
-
+import emblaCarousel02 from "../../components/EmblaCarousel02/EmblaCarousel.jsx";
 import ScrollTrigger from "../../components/ScrollTrigger/page.jsx";
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
@@ -97,7 +97,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
       className="w-full  fixed bottom-[20px] left-0 flex justify-center"
     >
       <div className="flex flex-col">
-        <div className="bottom-navgation z-[99999999] border-2 py-2 w-[400px] border-gray-300  left-[90%g] rounded-[12px] m-1 bg-white flex px-3 justify-between">
+        <div className="bottom-navgation z-[999999999999] border-2 py-2 w-[400px] border-gray-300  left-[90%g] rounded-[12px] m-1 bg-white flex px-3 justify-between">
           <div className="logo h-full flex justify-center items-center">
             <img
               className="w-[120px]"
@@ -123,7 +123,38 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
         <p>CART</p>
       </Link>
     </div>
-
+    <div className="nav  hidden md:flex shadow-md z-[9999999] px-[30px] fixed top-0 left-[12%] w-[80%] bg-white py-[20px] border border-t-none border-[#a1a1a1] flex justify-center rounded-b-[20px]">
+      <div className="logo w-[20%] ">
+        <img
+          className="w-[300px]"
+          src="https://gacha-lab.tech/assets/img/common/logo.svg"
+          alt=""
+        />
+      </div>
+      <div className="links items-center w-[80%] justify-end flex">
+        <a href="" className="font-bold mx-2 text-[14px]">
+          自慢のプロダクト
+        </a>
+        <a href="" className="font-bold mx-2 text-[14px]">
+          自慢のプロダクト
+        </a>
+        <a href="" className="font-bold mx-2 text-[14px]">
+          自慢のプロダクト
+        </a>
+        <a
+          href=""
+          className="bg-[#db4c4c] inline-block flex justify-center items-center mx-1 py-2 text-white border-2 rounded-[40px] border-black px-3"
+        >
+          最新情報
+        </a>
+        <a
+          href=""
+          className="bg-[#343434] inline-block flex justify-center items-center mx-1 py-2 text-white border-2 rounded-[40px] border-black px-3"
+        >
+          お問い合わせ
+        </a>
+      </div>
+    </div>
     <section
       data-aos="fade-up"
       className="  justify-center py-[100px] px-[20px] sm:px-[40px] flex flex-col  lg:flex-row section-hero-part  lg:px-[0px] my-[100px]"
@@ -325,6 +356,10 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
     </section>
     <section className="h-auto py-[100px]">
       <ScrollTrigger />
+    </section>
+    <section className="section-gallery ">
+      {/* <p>toys inner01</p> */}
+      <emblaCarousel02 />
     </section>
   </div>
 );

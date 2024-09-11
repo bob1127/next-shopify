@@ -10,10 +10,10 @@ const FullScreenSlider = () => {
   const progressBarTimeline = useRef(null);
 
   const slideNames = [
-    "Ether Shift Mode",
-    "Ether Shift Mode",
-    "Ether Shift Mode",
-    "Ether Shift Mode",
+    "PhotoGraphy",
+    "EtherShift-Demo",
+    "Website Design",
+    "Website Seo",
     "Ether Shift Mode",
   ];
 
@@ -37,7 +37,7 @@ const FullScreenSlider = () => {
         {
           scale: 1,
           top: "0%",
-          duration: 4.2,
+          duration: 2.5,
           ease: "power3.inOut",
         }
       );
@@ -140,7 +140,7 @@ const FullScreenSlider = () => {
   }, [currentSlideIndex]);
 
   return (
-    <div className="relative w-screen border-3 border-green-400 h-[80vh]">
+    <div className="relative w-screen  h-[95vh]">
       <div className="txt w-full text-[rgb(213,213,213)] ">
         <p className="text-[#959595] leading-[15px] z-[9999999999] w-1/2 absolute bottom-[50px] left-[126px] font-light">
           Lorem ipsum, dolor sit amet <br /> consectetur adipisicing elit.
