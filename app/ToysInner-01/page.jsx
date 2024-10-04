@@ -123,7 +123,7 @@ Calibration-free micro disposable pH electrode｜Humming Probe UH1 pH electrode
         <p>CART</p>
       </Link>
     </div>
-    <div className="nav  hidden md:flex shadow-md z-[9999999] px-[30px] fixed top-0 left-[12%] w-[80%] bg-white py-[20px] border border-t-none border-[#a1a1a1] flex justify-center rounded-b-[20px]">
+    <div className="nav mx-auto hidden md:flex shadow-md z-[9999999] px-[30px] fixed top-0 left-[30%] w-[80%] bg-white py-[20px] border border-t-none border-[#a1a1a1] flex justify-center rounded-b-[20px]">
       <div className="logo w-[20%] ">
         <img
           className="w-[300px]"

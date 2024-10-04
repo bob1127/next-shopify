@@ -63,7 +63,7 @@ const EmblaCarousel = (props) => {
         >
           {slides.map((slide, index) => (
             <div
-              className="embla__slide transform flex-none h-full min-w-0"
+              className="embla__slide transform flex-none  h-full min-w-0"
               key={index}
               style={{
                 transform: "translate3d(0, 0, 0)",
@@ -72,7 +72,7 @@ const EmblaCarousel = (props) => {
               }}
             >
               <div
-                className="embla__slide__number border-none md:border bg-white py-8 md:border-black flex flex-col items-center justify-center font-semibold"
+                className="embla__slide__number border-none border border-black md:border bg-grey-500 py-8 md:border-black flex flex-col items-center justify-center font-semibold"
                 style={{
                   boxShadow: "inset 0 0 0 0.2rem var(--detail-medium-contrast)",
                   borderRadius: "1.8rem",
@@ -86,7 +86,7 @@ const EmblaCarousel = (props) => {
                     {slide.content ? (
                       slide.content
                     ) : (
-                      <div className="h-full w-full overflow-hidden">
+                      <div className="h-full border border-black w-full overflow-hidden">
                         <img
                           src={slide.image}
                           className="w-full hover:scale-105 duration-1000 md:h-full"
@@ -95,10 +95,18 @@ const EmblaCarousel = (props) => {
                       </div>
                     )}
                     <div className="txt mt-5 flex-col flex justify-center items-center w-4/5 mx-auto">
-                      <b className="text-xl text-center">{slide.title}</b>
-                      <p className="text-sm font-normal text-center">
+                      <b className="text-[18px] font-extrabold text-center">
+                        {slide.title}
+                      </b>
+                      <p className="text-[14px] text-rose-500 font-bold text-center">
                         {slide.description}
                       </p>
+                      <a
+                        className="text-black px-2 py-1 w-[80px] inline-block  text-[14px] rounded-[3px] hover:text-white  hover:bg-rose-500 duration-300 border border-black"
+                        href=""
+                      >
+                        Buy Now
+                      </a>
                     </div>
                   </div>
                 </a>

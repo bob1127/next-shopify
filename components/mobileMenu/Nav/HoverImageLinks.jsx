@@ -115,25 +115,29 @@ export const HoverImageLinks = () => {
     <section className=" p-4 md:p-8">
       <div className="mx-auto max-w-5xl">
         <Link
-          heading="蝦皮逛逛"
+          heading="蝦皮逛逛 Shoppee"
           subheading="Learn what we do here"
           imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240704_staff.jpg"
           href="https://shopee.tw/"
-     
         ></Link>
         <Link
-          heading="時尚服裝"
+          heading="服飾 Dress"
           subheading="We work with great people"
           imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240712_new_women.jpg"
           href="#"
         />
         <Link
-          heading="寵物用品 Pets"
+          heading="食品/零食 Food"
           subheading="Our work speaks for itself"
           imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240705_tshirts_and_hair.jpg"
           href="#"
         />
-      
+        <Link
+          heading="玩具 Toys"
+          subheading="Our work speaks for itself"
+          imgSrc="https://www.dot-st.com/static/docs/nikoand/keyvisual/images/nk_main_240705_tshirts_and_hair.jpg"
+          href="#"
+        />
       </div>
     </section>
   );

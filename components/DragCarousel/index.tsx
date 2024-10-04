@@ -204,7 +204,7 @@ export default function SuggestedCarousel() {
           </Link>
         </div>
         <h1 className="my-[20px] text-[40px] lg:text-6xl font-extrabold uppercase">
-          Framer Motion Carousel
+          0-5歲 服飾銷售
         </h1>
         <p className="text-sm text-gray-400">
           only really works on desktop for now

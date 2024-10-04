@@ -1,78 +1,77 @@
 // Import necessary modules and components
 
-
-"use client"
+"use client";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Logo from './Logo.jsx'
+import Logo from "./Logo.jsx";
 import Link from "next/link.js";
-import MobileMenu from '../mobileMenu/index.jsx'
-import Marquee from 'react-fast-marquee'
+import MobileMenu from "../mobileMenu/index.jsx";
+import Marquee from "react-fast-marquee";
 // Define SlideTabsExample component
 export const SlideTabsExample = () => {
   return (
-   
-          <div className="bg-[#2b72e5] border-3 border-black  pt-8 pb-6 flex mx-auto left-[40%]   justify-center  items-center fixed  w-[100%] z-[999999]">
+    <div className="bg-[#2b72e5] border-3 border-black  pt-8 pb-6 flex mx-auto left-[40%]   justify-center  items-center fixed  w-[100%] z-[999999]">
       <div className="marquee fixed bg-white notice-modal mx-auto w-[100vw] rounded-[5px] border-black border  flex flex-row p-1 bg-whote  top-0">
-        <img className="w-[25px] bg-white border rounded-full h-[25px]" src="https://www.nikoand.jp/wp-content/uploads/2024/03/teraai.png" alt="" />
+        <img
+          className="w-[25px] bg-white border rounded-full h-[25px]"
+          src="https://www.nikoand.jp/wp-content/uploads/2024/03/teraai.png"
+          alt=""
+        />
         <Marquee>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-             <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
-            <div className='w-[100px]'>
-              <p>PLAY ⚾️</p>
-            </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
+          <div className="w-[100px]">
+            <p>PLAY ⚾️</p>
+          </div>
         </Marquee>
-        
       </div>
       <div className="Logo-section w-[20%] border-black border-1 flex justify-center">
-        <Logo/>
+        <Logo />
       </div>
       <div className="Logo-section w-[60%] border-black border-1">
-         <SlideTabs />
+        <SlideTabs />
       </div>
       <div className="Logo-section w-[20%] border-black border-1">
-<MobileMenu/>
+        <MobileMenu />
       </div>
-     
     </div>
-      
   );
 };
 
@@ -96,17 +95,35 @@ const SlideTabs = () => {
     >
       {/* Render each tab with dynamic properties */}
 
-      <Link href='/'>   <Tab setPosition={setPosition}> <b className="font-extrabold ">首頁</b> Home</Tab></Link>
-    <Link href="/Food" className="cursor-pointer">
-      <Tab setPosition={setPosition}><b className="font-extrabold ">食品</b> Foods</Tab></Link>
-          <Link href="/Blog" className="cursor-pointer">
-      <Tab setPosition={setPosition}><b className="font-extrabold ">服飾</b> Clothes</Tab></Link>
+      <Link href="/">
+        {" "}
+        <Tab setPosition={setPosition}>
+          {" "}
+          <b className="font-extrabold ">首頁</b> Home
+        </Tab>
+      </Link>
+      <Link href="/Food" className="cursor-pointer">
+        <Tab setPosition={setPosition}>
+          <b className="font-extrabold ">食品</b> Foods
+        </Tab>
+      </Link>
+      <Link href="/Blog" className="cursor-pointer">
+        <Tab setPosition={setPosition}>
+          <b className="font-extrabold ">服飾</b> Clothes
+        </Tab>
+      </Link>
 
-      <Link href="/toys" className="cursor-pointer">
-      <Tab setPosition={setPosition}><b className="font-extrabold cursor-pointer" >       玩具 </b> Toy </Tab></Link>
+      <Link href="/toys04" className="cursor-pointer">
+        <Tab setPosition={setPosition}>
+          <b className="font-extrabold cursor-pointer"> 玩具 </b> Toy{" "}
+        </Tab>
+      </Link>
 
-        <Link href="/WordpressBlog" className="cursor-pointer">
-      <Tab setPosition={setPosition}><b className="font-extrabold ">文章</b> Blog</Tab></Link>
+      <Link href="/WordpressBlog" className="cursor-pointer">
+        <Tab setPosition={setPosition}>
+          <b className="font-extrabold ">文章</b> Blog
+        </Tab>
+      </Link>
 
       {/* Render the cursor with its position animated */}
       <Cursor position={position} />

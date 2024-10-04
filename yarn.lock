@@ -7109,10 +7109,10 @@
   "resolved" "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
   "version" "3.2.2"
 
-"react-fast-marquee@^1.6.4":
-  "integrity" "sha512-LAgvhRmHdqaUQ8R5jCUwzEGFUIjnCCt3T3W8X7j7wF6DWe0SATlpP0JX1V0pp2qX3DYUezmn1Iz5AtRFdL2EWQ=="
-  "resolved" "https://registry.npmjs.org/react-fast-marquee/-/react-fast-marquee-1.6.4.tgz"
-  "version" "1.6.4"
+"react-fast-marquee@^1.6.5":
+  "integrity" "sha512-swDnPqrT2XISAih0o74zQVE2wQJFMvkx+9VZXYYNSLb/CUcAzU9pNj637Ar2+hyRw6b4tP6xh4GQZip2ZCpQpg=="
+  "resolved" "https://registry.npmjs.org/react-fast-marquee/-/react-fast-marquee-1.6.5.tgz"
+  "version" "1.6.5"
 
 "react-i18next@^13.2.2":
   "integrity" "sha512-+nFUkbRByFwnrfDcYqvzBuaeZb+nACHx+fAWN/pZMddWOCJH5hoc21+Sa/N/Lqi6ne6/9wC/qRGOoQhJa6IkEQ=="
@@ -7700,6 +7700,11 @@
   "integrity" "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="
   "resolved" "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz"
   "version" "3.0.0"
+
+"shopify-buy@^2.22.0":
+  "integrity" "sha512-Y7FXmgX+By5VjF449oGj6+f8wBEKSupeAS/7bz9MXnvFmhT4C3ka/mzTjVDZTmq0arJdx3EyxUgpaWez3ztoKg=="
+  "resolved" "https://registry.npmjs.org/shopify-buy/-/shopify-buy-2.22.0.tgz"
+  "version" "2.22.0"
 
 "side-channel@^1.0.6":
   "integrity" "sha512-fDW/EZ6Q9RiO8eFG8Hj+7u/oW+XrPTIChwCOM2+th2A6OblDtYYIpve9m+KvI9Z4C9qSEXlaGR6bTEYHReuglA=="
