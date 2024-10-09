@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 
 const words = [
-  "Hello",
-  "Bonjour",
-  "Ciao",
-  "Olà",
-  "やあ",
-  "Hallå",
-  "Guten tag",
-  "Hallo",
+  "Toys",
+  "袖珍玩具",
+  "Switch",
+  "各項周邊",
+  "扭蛋",
+  "公仔",
+  "Game Boy",
+  "任天堂",
 ];
 
 export default function Index() {
@@ -62,8 +62,13 @@ export default function Index() {
     >
       {dimension.width > 0 && (
         <>
-          <motion.p variants={opacity} initial="initial" animate="enter">
-            <span></span>
+          <motion.p
+            variants={opacity}
+            initial="initial"
+            animate="enter"
+            className="text-[#e95353]"
+          >
+            <span className="text-[#e95353]"></span>
             {words[index]}
           </motion.p>
           <svg>

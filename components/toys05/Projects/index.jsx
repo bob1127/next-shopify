@@ -9,22 +9,22 @@ import Rounded from "../../../common/RoundedButton";
 
 const projects = [
   {
-    title: "C2 Montreal",
-    src: "c2montreal.png",
+    title: "袖珍玩具",
+    src: "funny.jpg",
     color: "#000000",
   },
   {
-    title: "Office Studio",
-    src: "officestudio.png",
+    title: "寶可夢Pokemon",
+    src: "funny.jpg",
     color: "#8C8C8C",
   },
   {
-    title: "Locomotive",
-    src: "locomotive.png",
+    title: "任天堂掌機",
+    src: "funny.jpg",
     color: "#EFE8D3",
   },
   {
-    title: "Silencio",
+    title: "各式扭蛋公仔",
     src: "silencio.png",
     color: "#706D63",
   },
@@ -123,7 +123,7 @@ export default function Home() {
         })}
       </div>
       <Rounded>
-        <p>More work</p>
+        <p>更多商品</p>
       </Rounded>
       <>
         <motion.div

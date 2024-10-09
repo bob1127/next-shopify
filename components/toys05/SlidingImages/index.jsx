@@ -6,19 +6,19 @@ import Image from "next/image";
 const slider1 = [
   {
     color: "#e3e5e7",
-    src: "c2.jpg",
+    src: "background.jpg",
   },
   {
     color: "#d6d7dc",
-    src: "decimal.jpg",
+    src: "background.jpg",
   },
   {
     color: "#e3e3e3",
-    src: "funny.jpg",
+    src: "background.jpg",
   },
   {
     color: "#21242b",
-    src: "google.jpg",
+    src: "background.jpg",
   },
 ];
 
@@ -63,11 +63,7 @@ export default function index() {
               style={{ backgroundColor: project.color }}
             >
               <div className={styles.imageContainer}>
-                <Image
-                  fill={true}
-                  alt={"image"}
-                  src={`/images/${project.src}`}
-                />
+                <img src={`/images/${project.src}`} className="w-full"></img>
               </div>
             </div>
           );

@@ -33,7 +33,11 @@ export default function index() {
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
           <Rounded className={styles.button}>
-            <p>About me</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjdSd8v6PEILPDGH4Tsw5AyaoQ6r4EmIxjmar2QSzNhQaLOiIc1x5hdlDi1XGOFyvgIDY&usqp=CAU"
+              className="w-full"
+              alt=""
+            />
           </Rounded>
         </div>
       </div>

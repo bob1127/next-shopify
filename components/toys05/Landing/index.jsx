@@ -48,11 +48,15 @@ export default function Home() {
       animate="enter"
       className={styles.landing}
     >
-      <Image src="/images/background.jpg" fill={true} alt="background" />
+      <img
+        src="https://w0.peakpx.com/wallpaper/337/259/HD-wallpaper-nintendo-switch-oled-console-8k.jpg"
+        fill={true}
+        alt="background"
+      />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>Freelance Developer -</p>
-          <p ref={secondText}>Freelance Developer -</p>
+          <p ref={firstText}>兒童玩具 -</p>
+          <p ref={secondText}>Kids Toy -</p>
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>

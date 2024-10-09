@@ -28,7 +28,8 @@ export default function index() {
           <motion.div
             style={{
               x,
-              backgroundImage: "url('')",
+              backgroundImage:
+                "url('/images/ball-animation-download-in-lottie-json-gif-static-svg-file-formats--baby-toy-kids-game-handball-playing-toys-pack-animations-4334865-ezgif.com-video-to-gif-converter.gif')",
               backgroundSize: "cover", // 調整圖片大小以覆蓋整個 div
               backgroundPosition: "center", // 控制圖片在容器中的位置
             }}
@@ -38,7 +39,6 @@ export default function index() {
               <p>Get in touch</p>
             </Rounded>
           </motion.div>
-
           <motion.svg
             style={{ rotate, scale: 2 }}
             width="9"
