@@ -25,8 +25,9 @@ export async function GET(req) {
       );
     }
 
-    // 解码 slug
-    const decodedSlug = decodeURIComponent(slug);  // 解碼 slug 以處理 URL 編碼
+    // 如果 slug 已经是 URL 编码的，避免再次解码
+    // 这里可以根据具体情况决定是否解码
+    const decodedSlug = decodeURIComponent(slug);  // 解码 slug
 
     // 获取当前时间戳，避免缓存
     const timestamp = new Date().getTime();
@@ -55,6 +56,9 @@ export async function GET(req) {
   } catch (error) {
     // 捕获错误并返回错误信息
     console.error('Error fetching products:', error.message);
+    if (error.response) {
+      console.error('Response error:', error.response.data);  // 打印服务器返回的错误信息
+    }
     return new Response(
       JSON.stringify({ error: `Failed to fetch products: ${error.message}` }),
       { status: 500 }
