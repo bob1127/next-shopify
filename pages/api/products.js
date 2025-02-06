@@ -25,14 +25,11 @@ export async function GET(req) {
       );
     }
 
-    // 解码 slug 参数，确保它正确处理
-    const decodedSlug = decodeURIComponent(slug);
-
     // 获取当前时间戳，避免缓存
     const timestamp = new Date().getTime();
 
-    // 第一步：通过 slug 获取分类的产品
-    const productsUrl = `${NEXT_PUBLIC_WP_API_BASE_URL}/wp-json/wc/v3/products?consumer_key=${NEXT_PUBLIC_WC_CONSUMER_KEY}&consumer_secret=${NEXT_PUBLIC_WC_CONSUMER_SECRET}&category=${decodedSlug}&timestamp=${timestamp}&per_page=100`;
+    // 第一步：直接通过 slug 获取分类的产品
+    const productsUrl = `${NEXT_PUBLIC_WP_API_BASE_URL}/wp-json/wc/v3/products?consumer_key=${NEXT_PUBLIC_WC_CONSUMER_KEY}&consumer_secret=${NEXT_PUBLIC_WC_CONSUMER_SECRET}&category=${slug}&timestamp=${timestamp}&per_page=100`;
 
     // 打印请求的 URL，确保 URL 正确
     console.log('Request URL for products:', productsUrl);
@@ -50,22 +47,11 @@ export async function GET(req) {
       console.log('No products found for this category.');
     }
 
-    // 解码每个产品的 slug
-    products = products.map(product => {
-      if (product.slug) {
-        product.slug = decodeURIComponent(product.slug); // 解码 slug
-      }
-      return product;
-    });
-
     // 返回筛选后的产品数据
     return new Response(JSON.stringify(products), { status: 200 });
   } catch (error) {
     // 捕获错误并返回错误信息
     console.error('Error fetching products:', error.message);
-    if (error.response) {
-      console.error('Response error:', error.response.data);  // 打印服务器返回的错误信息
-    }
     return new Response(
       JSON.stringify({ error: `Failed to fetch products: ${error.message}` }),
       { status: 500 }
